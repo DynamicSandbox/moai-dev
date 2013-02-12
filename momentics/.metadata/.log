@@ -91,3 +91,6 @@ HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.e
 
 !ENTRY org.eclipse.cdt.core 1 0 2013-02-12 10:43:11.316
 !MESSAGE Indexed 'lua' (0 sources, 12 headers) in 0.07 sec: 552 declarations; 630 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 10:48:37.431
+!MESSAGE Indexed 'lua' (0 sources, 12 headers) in 0.07 sec: 552 declarations; 630 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
