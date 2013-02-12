@@ -1,7 +1,10 @@
 // Copyright (c) 2010-2011 Zipline Games, Inc. All Rights Reserved.
 // http://getmoai.com
 
+#ifndef __QNX__
 #include "pch.h"
+#endif
+
 #include <aku/AKU.h>
 
 #include <cassert>

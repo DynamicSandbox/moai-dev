@@ -25,7 +25,7 @@
 	
 #endif
 
-#ifdef MOAI_OS_ANDROID
+#if defined( MOAI_OS_ANDROID ) | defined( __QNX__ )
 	#include <GLES/gl.h>
 	#include <GLES/glext.h>
 	#include <GLES2/gl2.h>
