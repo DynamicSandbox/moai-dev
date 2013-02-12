@@ -31,6 +31,11 @@
 		#define _snprintf snprintf
 #endif
 
+#ifdef __QNX__
+#include <sys/types.h>
+typedef uint u_int32_t;
+#endif
+
 #ifdef NACL
 		typedef unsigned long u_int32_t;
 #endif
