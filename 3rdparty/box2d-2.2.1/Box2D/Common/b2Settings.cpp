@@ -17,10 +17,16 @@
 */
 
 #include <Box2D/Common/b2Settings.h>
+
+#ifdef __QNX__
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdarg.h>
+#else
 #include <cstdlib>
 #include <cstdio>
 #include <cstdarg>
-
+#endif
 b2Version b2_version = {2, 2, 1};
 
 // Memory allocators. Modify these to use your own allocator.

@@ -2,13 +2,4 @@
 **** Build of configuration Device-Debug for project aku ****
 
 **** Internal Builder is used for build               ****
-qcc -o src/AKU.o ../../../src/aku/AKU.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/aku/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/ -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/lua-5.1.3/src -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/config-default -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/ -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/tinyxml -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/box2d-2.2.1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/chipmunk-5.3.4/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-In file included from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/uslscore.h:14:0,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaicore/pch.h:1,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaicore/moaicore.h:7,
-                 from ../../../src/aku/AKU.cpp:11:
-/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/STLString.h:46:8: note: the mangling of 'va_list' has changed in GCC 4.4
-qcc -A libaku.a src/AKU.o -V4.6.3,gcc_ntoarmv7le_cpp -w1
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libaku.a
-Build complete for project aku
-Time consumed: 1996  ms.  
+Nothing to build for aku

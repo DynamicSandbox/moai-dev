@@ -1,10 +1,5 @@
 
-**** Rebuild of configuration Device-Debug for project contrib ****
+**** Build of configuration Device-Debug for project contrib ****
 
 **** Internal Builder is used for build               ****
-qcc -o src/whirlpool.o ../../../3rdparty/contrib/whirlpool.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/contrib/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -o src/utf8.o ../../../3rdparty/contrib/utf8.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/contrib/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -A libcontrib.a src/whirlpool.o src/utf8.o -V4.6.3,gcc_ntoarmv7le -w1
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libcontrib.a
-Build complete for project contrib
-Time consumed: 490  ms.  
+Nothing to build for contrib

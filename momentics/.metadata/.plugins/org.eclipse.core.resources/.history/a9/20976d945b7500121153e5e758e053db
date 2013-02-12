@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+
+<!-- BlackBerry® 10 application descriptor file.
+
+    Specifies parameters for identifying, installing, and launching native applications on BlackBerry® 10 OS.
+-->
+
+    <!-- A universally unique application identifier. Must be unique across all BlackBerry applications.
+         Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
+    <id>com.example.SampleHost</id>
+
+    <!-- The name that is displayed in the BlackBerry application installer. 
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+    <name>SampleHost</name>
+    
+    <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade. 
+         Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
+         An updated version of application must have a versionNumber value higher than the previous version. Required. -->
+    <versionNumber>1.0.0</versionNumber>
+
+    <!-- Fourth digit segment of the package version. First three segments are taken from the 
+         <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
+    <buildId>1</buildId>
+                 
+    <!-- Description, displayed in the BlackBerry application installer.
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+    <description>The SampleHost application</description>
+
+    <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
+    <author>Example Inc.</author>
+    
+    <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
+    <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
+   
+    <initialWindow>
+        <systemChrome>none</systemChrome>
+        <transparent>false</transparent>
+    </initialWindow>
+    
+    <!--  The category where the application appears. Either core.games or core.media. -->
+    <category>core.games</category>
+    <asset path="assets">assets</asset>
+    <asset path="icon.png">icon.png</asset>
+    <configuration name="Device-Debug">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Debug/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
+    </configuration>
+    <configuration name="Device-Release">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Release/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
+       <asset path="${workspace_loc:/aku/Device-Release/libaku.a}" type="Qnx/Elf">lib/libaku.a</asset>
+       <asset path="${workspace_loc:/chipmunk/Device-Release/libchipmunk.so}" type="Qnx/Elf">lib/libchipmunk.so</asset>
+       <asset path="${workspace_loc:/lua/Device-Release/liblua.so}" type="Qnx/Elf">lib/liblua.so</asset>
+       <asset path="${workspace_loc:/luaext/Device-Release/libluaext.so}" type="Qnx/Elf">lib/libluaext.so</asset>
+       <asset path="${workspace_loc:/moaicore/Device-Release/libmoaicore.so}" type="Qnx/Elf">lib/libmoaicore.so</asset>
+       <asset path="${workspace_loc:/contrib/Device-Release/libcontrib.so}" type="Qnx/Elf">lib/libcontrib.so</asset>
+       <asset path="${workspace_loc:/jansson/Device-Release/libjansson.so}" type="Qnx/Elf">lib/libjansson.so</asset>
+    </configuration>
+    <configuration name="Device-Profile">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Profile/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
+       <asset path="${workspace_loc:/aku/Device-Profile/libaku.a}" type="Qnx/Elf">lib/libaku.a</asset>
+       <asset path="${workspace_loc:/Box2D/Simulator-Coverage/libBox2D.so}" type="Qnx/Elf">lib/libBox2D.so</asset>
+       <asset path="${workspace_loc:/lua/Device-Profile/liblua.so}" type="Qnx/Elf">lib/liblua.so</asset>
+       <asset path="${workspace_loc:/luaext/Device-Profile/libluaext.so}" type="Qnx/Elf">lib/libluaext.so</asset>
+       <asset path="${workspace_loc:/moaicore/Device-Profile/libmoaicore.so}" type="Qnx/Elf">lib/libmoaicore.so</asset>
+       <asset path="${workspace_loc:/chipmunk/Device-Profile/libchipmunk.so}" type="Qnx/Elf">lib/libchipmunk.so</asset>
+       <asset path="${workspace_loc:/contrib/Device-Profile/libcontrib.so}" type="Qnx/Elf">lib/libcontrib.so</asset>
+       <asset path="${workspace_loc:/jansson/Device-Profile/libjansson.so}" type="Qnx/Elf">lib/libjansson.so</asset>
+    </configuration>
+    <configuration name="Device-Coverage">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Coverage/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
+       <asset path="${workspace_loc:/lua/Device-Coverage/liblua.so}" type="Qnx/Elf">lib/liblua.so</asset>
+       <asset path="${workspace_loc:/luaext/Device-Coverage/libluaext.so}" type="Qnx/Elf">lib/libluaext.so</asset>
+       <asset path="${workspace_loc:/moaicore/Device-Coverage/libmoaicore.so}" type="Qnx/Elf">lib/libmoaicore.so</asset>
+       <asset path="${workspace_loc:/aku/Device-Coverage/libaku.a}" type="Qnx/Elf">lib/libaku.a</asset>
+       <asset path="${workspace_loc:/Box2D/Simulator-Coverage/libBox2D.so}" type="Qnx/Elf">lib/libBox2D.so</asset>
+       <asset path="${workspace_loc:/chipmunk/Device-Coverage/libchipmunk.so}" type="Qnx/Elf">lib/libchipmunk.so</asset>
+       <asset path="${workspace_loc:/contrib/Device-Coverage/libcontrib.so}" type="Qnx/Elf">lib/libcontrib.so</asset>
+       <asset path="${workspace_loc:/jansson/Device-Coverage/libjansson.so}" type="Qnx/Elf">lib/libjansson.so</asset>
+    </configuration>
+       <asset path="${workspace_loc:/lua/Simulator-Debug/liblua.so}" type="Qnx/Elf">lib/liblua.so</asset>
+       <asset path="${workspace_loc:/luaext/Simulator-Debug/libluaext.so}" type="Qnx/Elf">lib/libluaext.so</asset>
+       <asset path="${workspace_loc:/moaicore/Simulator-Debug/libmoaicore.so}" type="Qnx/Elf">lib/libmoaicore.so</asset>
+    <configuration name="Simulator-Debug">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="Simulator-Debug/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
+       <asset path="${workspace_loc:/aku/Simulator-Debug/libaku.a}" type="Qnx/Elf">lib/libaku.a</asset>
+       <asset path="${workspace_loc:/chipmunk/Simulator-Debug/libchipmunk.so}" type="Qnx/Elf">lib/libchipmunk.so</asset>
+       <asset path="${workspace_loc:/contrib/Simulator-Debug/libcontrib.so}" type="Qnx/Elf">lib/libcontrib.so</asset>
+       <asset path="${workspace_loc:/lua/Simulator-Profile/liblua.so}" type="Qnx/Elf">lib/liblua.so</asset>
+       <asset path="${workspace_loc:/luaext/Simulator-Profile/libluaext.so}" type="Qnx/Elf">lib/libluaext.so</asset>
+       <asset path="${workspace_loc:/moaicore/Simulator-Profile/libmoaicore.so}" type="Qnx/Elf">lib/libmoaicore.so</asset>
+       <asset path="${workspace_loc:/jansson/Simulator-Debug/libjansson.so}" type="Qnx/Elf">lib/libjansson.so</asset>
+    </configuration>
+    <configuration name="Simulator-Profile">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="Simulator-Profile/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
+       <asset path="${workspace_loc:/aku/Simulator-Profile/libaku.a}" type="Qnx/Elf">lib/libaku.a</asset>
+       <asset path="${workspace_loc:/lua/Simulator-Coverage/liblua.so}" type="Qnx/Elf">lib/liblua.so</asset>
+       <asset path="${workspace_loc:/luaext/Simulator-Coverage/libluaext.so}" type="Qnx/Elf">lib/libluaext.so</asset>
+       <asset path="${workspace_loc:/moaicore/Simulator-Coverage/libmoaicore.so}" type="Qnx/Elf">lib/libmoaicore.so</asset>
+       <asset path="${workspace_loc:/chipmunk/Simulator-Profile/libchipmunk.so}" type="Qnx/Elf">lib/libchipmunk.so</asset>
+       <asset path="${workspace_loc:/contrib/Simulator-Profile/libcontrib.so}" type="Qnx/Elf">lib/libcontrib.so</asset>
+       <asset path="${workspace_loc:/jansson/Simulator-Profile/libjansson.so}" type="Qnx/Elf">lib/libjansson.so</asset>
+    </configuration>
+    <configuration name="Simulator-Coverage">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="Simulator-Coverage/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
+       <asset path="${workspace_loc:/aku/Simulator-Coverage/libaku.a}" type="Qnx/Elf">lib/libaku.a</asset>
+       <asset path="${workspace_loc:/chipmunk/Simulator-Coverage/libchipmunk.so}" type="Qnx/Elf">lib/libchipmunk.so</asset>
+       <asset path="${workspace_loc:/contrib/Simulator-Coverage/libcontrib.so}" type="Qnx/Elf">lib/libcontrib.so</asset>
+       <asset path="${workspace_loc:/jansson/Simulator-Coverage/libjansson.so}" type="Qnx/Elf">lib/libjansson.so</asset>
+    </configuration>
+    
+    <!--  The icon for the application. -->
+    <icon>
+       <image>icon.png</image>
+    </icon>
+    
+    <!-- Ensure that shared libraries in the package are found at run-time. -->
+    <env var="LD_LIBRARY_PATH" value="app/native/lib"/>
+    
+</qnx>

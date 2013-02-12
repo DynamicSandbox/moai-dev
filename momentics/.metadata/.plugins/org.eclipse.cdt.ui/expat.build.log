@@ -1,13 +1,13 @@
 
-**** Build of configuration Device-Debug for project expat ****
+**** Rebuild of configuration Device-Debug for project expat ****
 
 **** Internal Builder is used for build               ****
-qcc -o src/xmlrole.o ../../../3rdparty/expat-2.0.1/lib/xmlrole.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/expat/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DHAVE_MEMMOVE -c -O0 -g -fstack-protector-strong
 qcc -o src/xmltok_impl.o ../../../3rdparty/expat-2.0.1/lib/xmltok_impl.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/expat/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DHAVE_MEMMOVE -c -O0 -g -fstack-protector-strong
+qcc -o src/xmltok_ns.o ../../../3rdparty/expat-2.0.1/lib/xmltok_ns.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/expat/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DHAVE_MEMMOVE -c -O0 -g -fstack-protector-strong
+qcc -o src/xmlrole.o ../../../3rdparty/expat-2.0.1/lib/xmlrole.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/expat/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DHAVE_MEMMOVE -c -O0 -g -fstack-protector-strong
 qcc -o src/xmlparse.o ../../../3rdparty/expat-2.0.1/lib/xmlparse.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/expat/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DHAVE_MEMMOVE -c -O0 -g -fstack-protector-strong
 qcc -o src/xmltok.o ../../../3rdparty/expat-2.0.1/lib/xmltok.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/expat/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DHAVE_MEMMOVE -c -O0 -g -fstack-protector-strong
-qcc -o src/xmltok_ns.o ../../../3rdparty/expat-2.0.1/lib/xmltok_ns.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/expat/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DHAVE_MEMMOVE -c -O0 -g -fstack-protector-strong
 qcc -A libexpat.a src/xmltok_ns.o src/xmltok_impl.o src/xmltok.o src/xmlrole.o src/xmlparse.o -V4.6.3,gcc_ntoarmv7le -w1
 /Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libexpat.a
 Build complete for project expat
-Time consumed: 1397  ms.  
+Time consumed: 1482  ms.  

@@ -13,18 +13,19 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Get" key="selection"/>
+		<item value="json_object_iter_next" key="selection"/>
 		<list key="findhistory">
+			<item value="json_object_iter_next"/>
+			<item value="internal.h"/>
+			<item value="libaku.so"/>
 			<item value="GetAngular"/>
 			<item value="Get"/>
 			<item value="glu.h"/>
 			<item value=""/>
 			<item value="int32"/>
-			<item value="uint32_t"/>
-			<item value="u_int32_t"/>
-			<item value="u_int32"/>
 		</list>
 		<list key="replacehistory">
+			<item value="libaku.a"/>
 		</list>
 	</section>
 </section>

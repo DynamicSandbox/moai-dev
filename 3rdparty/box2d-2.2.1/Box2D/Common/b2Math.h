@@ -21,7 +21,11 @@
 
 #include <Box2D/Common/b2Settings.h>
 
+#ifdef __QNX__
+#include <math.h>
+#else
 #include <cmath>
+#endif
 #include <cfloat>
 #include <cstddef>
 #include <limits>
