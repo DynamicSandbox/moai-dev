@@ -1,0 +1,93 @@
+!SESSION 2013-02-11 16:33:26.934 -----------------------------------------------
+eclipse.buildId=10.0.9
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/nictuku/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/nictuku/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-02-11 16:33:36.679
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-02-11 16:33:36.679
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@8bd98e),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@8bd98e)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@8bd98e),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@8bd98e)),sourcePriority=16640)
+
+!ENTRY com.qnx.tools.ide.project.ui 2 -1 2013-02-11 16:33:44.927
+!MESSAGE Project category Executable has no associated project types
+
+!ENTRY com.qnx.tools.ide.bbt.core 2 -1 2013-02-11 16:34:14.852
+!MESSAGE No category "null" is defined in the library descriptors.
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:34:15.217
+!MESSAGE Indexed 'lua' (0 sources, 12 headers) in 0.38 sec: 552 declarations; 630 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:36:34.095
+!MESSAGE Indexed 'zlcore' (0 sources, 24 headers) in 0.38 sec: 1,170 declarations; 1,486 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:38:08.412
+!MESSAGE Indexed 'zlcore' (11 sources, 98 headers) in 3.21 sec: 11,227 declarations; 20,720 references; 2 unresolved inclusions; 0 syntax errors; 23 unresolved names (0.07%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:38:23.569
+!MESSAGE Indexed 'zlcore' (11 sources, 92 headers) in 2.66 sec: 10,626 declarations; 19,703 references; 27 unresolved inclusions; 0 syntax errors; 543 unresolved names (1.76%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:39:20.472
+!MESSAGE Indexed 'zlcore' (11 sources, 87 headers) in 2.66 sec: 10,391 declarations; 18,759 references; 30 unresolved inclusions; 0 syntax errors; 1,399 unresolved names (4.58%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:41:41.807
+!MESSAGE Indexed 'zlcore' (11 sources, 87 headers) in 2.67 sec: 10,391 declarations; 18,759 references; 30 unresolved inclusions; 0 syntax errors; 1,399 unresolved names (4.58%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:42:45.450
+!MESSAGE Indexed 'zlcore' (11 sources, 92 headers) in 2.95 sec: 10,626 declarations; 19,703 references; 27 unresolved inclusions; 0 syntax errors; 543 unresolved names (1.76%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:43:58.767
+!MESSAGE Indexed 'zlcore' (0 sources, 24 headers) in 0.21 sec: 1,169 declarations; 1,486 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:44:52.155
+!MESSAGE Indexed 'zlcore' (11 sources, 92 headers) in 2.66 sec: 10,626 declarations; 19,703 references; 27 unresolved inclusions; 0 syntax errors; 543 unresolved names (1.76%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:48:59.231
+!MESSAGE Indexed 'lua' (0 sources, 24 headers) in 0.27 sec: 1,169 declarations; 1,482 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:51:05.935
+!MESSAGE Indexed 'lua' (0 sources, 4 headers) in 0.04 sec: 0 declarations; 0 references; 4 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-11 16:51:45.556
+!MESSAGE Indexed 'lua' (0 sources, 12 headers) in 0.06 sec: 552 declarations; 628 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2013-02-12 10:17:38.661 -----------------------------------------------
+eclipse.buildId=10.0.9
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/nictuku/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/nictuku/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-02-12 10:19:06.114
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-02-12 10:19:06.114
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@11d329d),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@11d329d)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@11d329d),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@11d329d)),sourcePriority=16640)
+
+!ENTRY com.qnx.tools.ide.project.ui 2 -1 2013-02-12 10:19:28.041
+!MESSAGE Project category Executable has no associated project types
+
+!ENTRY com.qnx.tools.ide.bbt.core 2 -1 2013-02-12 10:19:46.296
+!MESSAGE No category "null" is defined in the library descriptors.
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 10:19:52.364
+!MESSAGE Indexed 'lua' (0 sources, 24 headers) in 5.80 sec: 1,170 declarations; 1,482 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 10:32:17.414
+!MESSAGE Indexed 'moai' (2 sources, 74 headers) in 2.20 sec: 7,498 declarations; 9,893 references; 0 unresolved inclusions; 1 syntax errors; 47 unresolved names (0.27%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 10:43:11.316
+!MESSAGE Indexed 'lua' (0 sources, 12 headers) in 0.07 sec: 552 declarations; 630 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

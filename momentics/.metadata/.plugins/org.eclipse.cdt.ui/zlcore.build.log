@@ -1,0 +1,11 @@
+
+**** Rebuild of configuration Device-Debug for project zlcore ****
+
+**** Internal Builder is used for build               ****
+qcc -o src/zlcore-pch.o ../../../src/zlcore/zlcore-pch.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/zlcore/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
+qcc -o src/ZLFileSystem.o ../../../src/zlcore/ZLFileSystem.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/zlcore/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
+../../../src/zlcore/ZLFileSystem.cpp:8:28: fatal error: zlcore/zl_util.h: No such file or directory
+compilation terminated.
+cc: /Applications/bbndk/host_10_0_9_404/darwin/x86/usr/lib/gcc/arm-unknown-nto-qnx8.0.0eabi/4.6.3/cc1plus error 1
+Build error occurred, build is stopped
+Time consumed: 359  ms.  

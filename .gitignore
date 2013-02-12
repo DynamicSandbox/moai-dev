@@ -22,3 +22,6 @@ cmake_install.cmake
 *.o
 *.a
 src/moai/moai
+
+# BlackBerry 10
+momentics/usb
