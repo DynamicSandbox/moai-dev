@@ -20,7 +20,7 @@
 */
 
 #include "pch.h"
-#ifdef __linux
+#if (__linux || __QNX__)
 
 #include <uslscore/USDeviceTime.h>
 #include <time.h>
