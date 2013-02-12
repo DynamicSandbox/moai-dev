@@ -127,3 +127,12 @@ HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.e
 
 !ENTRY org.eclipse.cdt.core 1 0 2013-02-12 11:55:19.025
 !MESSAGE Indexed 'jansson' (9 sources, 33 headers) in 0.35 sec: 2,718 declarations; 6,671 references; 0 unresolved inclusions; 0 syntax errors; 3 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 11:57:30.354
+!MESSAGE Indexed 'zlcore' (0 sources, 24 headers) in 0.23 sec: 1,169 declarations; 1,486 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 11:59:40.979
+!MESSAGE Indexed 'zlcore' (11 sources, 98 headers) in 4.54 sec: 11,227 declarations; 20,724 references; 2 unresolved inclusions; 0 syntax errors; 23 unresolved names (0.07%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 12:00:52.882
+!MESSAGE Indexed 'zlcore' (11 sources, 99 headers) in 3.01 sec: 11,261 declarations; 20,751 references; 0 unresolved inclusions; 0 syntax errors; 16 unresolved names (0.05%)
