@@ -121,3 +121,9 @@ HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.e
 
 !ENTRY org.eclipse.cdt.core 1 0 2013-02-12 11:50:39.946
 !MESSAGE Indexed 'chipmunk' (26 sources, 55 headers) in 0.57 sec: 5,434 declarations; 13,579 references; 0 unresolved inclusions; 0 syntax errors; 9 unresolved names (0.05%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 11:54:01.153
+!MESSAGE Indexed 'jansson' (0 sources, 12 headers) in 0.13 sec: 552 declarations; 630 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-12 11:55:19.025
+!MESSAGE Indexed 'jansson' (9 sources, 33 headers) in 0.35 sec: 2,718 declarations; 6,671 references; 0 unresolved inclusions; 0 syntax errors; 3 unresolved names (0.03%)
