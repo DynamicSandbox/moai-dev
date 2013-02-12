@@ -1,16 +1,9 @@
 
-**** Build of configuration Device-Debug for project moai ****
+**** Rebuild of configuration Device-Debug for project moai ****
 
-make all 
-make -j 1 -Carm -fMakefile all
-make[1]: Entering directory `/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm'
-make -j 1 -Co.le-v7-g -fMakefile all
-make[2]: Entering directory `/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm/o.le-v7-g'
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/qcc -Vgcc_ntoarmv7 -c  -Wc,-Wall -fstack-protector-strong -D_FORTIFY_SOURCE=2   -DUSING_GL20    -I. -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm/le.v7 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm/o.le-v7-g -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include    -EL      -g        -DVARIANT_le -DVARIANT_v7 -DVARIANT_g -DBUILDENV_qss  /Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/bbutil.c 
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/qcc -Vgcc_ntoarmv7 -c  -Wc,-Wall -fstack-protector-strong -D_FORTIFY_SOURCE=2   -DUSING_GL20    -I. -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm/le.v7 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm/o.le-v7-g -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include    -EL      -g        -DVARIANT_le -DVARIANT_v7 -DVARIANT_g -DBUILDENV_qss  /Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/main.c 
-/bin/rm -f  /Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm/o.le-v7-g/moai
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/qcc -Vgcc_ntoarmv7 -Wl,--no-keep-memory  -Wl,-z,relro -Wl,-z,now  -o /Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm/o.le-v7-g/moai    bbutil.o    main.o   -L . -L /Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/armle-v7/lib -L /Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/armle-v7/usr/lib -L /Applications/bbndk/target_10_0_9_1673/qnx6/armle-v7/lib -L /Applications/bbndk/target_10_0_9_1673/qnx6/armle-v7/usr/lib  -Wl,--rpath-link . -Wl,--rpath-link /Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/armle-v7/lib -Wl,--rpath-link /Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/armle-v7/usr/lib -Wl,--rpath-link /Applications/bbndk/target_10_0_9_1673/qnx6/armle-v7/lib -Wl,--rpath-link /Applications/bbndk/target_10_0_9_1673/qnx6/armle-v7/usr/lib   -lbps    -lscreen    -lEGL    -lGLESv2    -lfreetype    -lpng    -lm   -EL      -g         
-make[2]: Leaving directory `/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm/o.le-v7-g'
-make[1]: Leaving directory `/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moai/arm'
-
-**** Build Finished ****
+**** Internal Builder is used for build               ****
+qcc -o src/bbutil.o ../src/bbutil.c -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DUSING_GL20 -c -O0 -g -fstack-protector-strong
+qcc -o src/main.o ../src/main.c -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DUSING_GL20 -c -O0 -g -fstack-protector-strong
+qcc -o moai src/main.o src/bbutil.o -lbps -lscreen -lEGL -lGLESv2 -lfreetype -lpng -lm -V4.6.3,gcc_ntoarmv7le_cpp -w1 -lang-c++ -g -Wl,-z,relro -Wl,-z,now -L/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/armle-v7/lib -L/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/armle-v7/usr/lib
+Build complete for project moai
+Time consumed: 1812  ms.  
