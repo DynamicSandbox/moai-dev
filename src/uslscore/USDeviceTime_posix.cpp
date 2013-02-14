@@ -34,7 +34,6 @@ static long _getTimerInfo () {
 	
 	struct timespec ts;
 	clock_gettime ( CLOCK_MONOTONIC, &ts );
-	
 	return ts.tv_nsec;
 }
 
@@ -46,7 +45,7 @@ static long _getTimerInfo () {
 	
 	double USDeviceTime::GetTimeInSeconds () {
 			
-		#ifndef ANDROID
+		#if !(defined( ANDROID ) || defined( __QNX__ ))
 			
 			static long last_time = _getTimerInfo (); // in nanoseconds
 		

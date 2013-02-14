@@ -45,37 +45,30 @@
     <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="Device-Debug/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
-       <asset path="libfreetype2.so" type="Qnx/Elf">lib/libfreetype2.so</asset>
     </configuration>
     <configuration name="Device-Release">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="Device-Release/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
-       <asset path="libfreetype2.so" type="Qnx/Elf">lib/libfreetype2.so</asset>
     </configuration>
     <configuration name="Device-Profile">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="Device-Profile/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
-       <asset path="libfreetype2.so" type="Qnx/Elf">lib/libfreetype2.so</asset>
     </configuration>
     <configuration name="Device-Coverage">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="Device-Coverage/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
-       <asset path="libfreetype2.so" type="Qnx/Elf">lib/libfreetype2.so</asset>
     </configuration>
     <configuration name="Simulator-Debug">
        <platformArchitecture>x86</platformArchitecture>
        <asset path="Simulator-Debug/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
-       <asset path="libfreetype2.so" type="Qnx/Elf">lib/libfreetype2.so</asset>
     </configuration>
     <configuration name="Simulator-Profile">
        <platformArchitecture>x86</platformArchitecture>
        <asset path="Simulator-Profile/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
-       <asset path="libfreetype2.so" type="Qnx/Elf">lib/libfreetype2.so</asset>
     </configuration>
     <configuration name="Simulator-Coverage">
        <platformArchitecture>x86</platformArchitecture>
        <asset path="Simulator-Coverage/SampleHost" entry="true" type="Qnx/Elf">SampleHost</asset>
-       <asset path="libfreetype2.so" type="Qnx/Elf">lib/libfreetype2.so</asset>
     </configuration>
     
     <!--  The icon for the application. -->

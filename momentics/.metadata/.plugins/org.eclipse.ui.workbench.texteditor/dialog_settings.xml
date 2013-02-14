@@ -13,18 +13,20 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="json_object_iter_next" key="selection"/>
+		<item value="seek" key="selection"/>
 		<list key="findhistory">
-			<item value="json_object_iter_next"/>
-			<item value="internal.h"/>
-			<item value="libaku.so"/>
-			<item value="GetAngular"/>
-			<item value="Get"/>
-			<item value="glu.h"/>
-			<item value=""/>
-			<item value="int32"/>
+			<item value="seek"/>
+			<item value="onInput"/>
+			<item value="pointerCallback"/>
+			<item value="touch"/>
+			<item value="Pointer"/>
+			<item value="pointer"/>
+			<item value="MeasureFrameRate"/>
+			<item value="stepSim"/>
 		</list>
 		<list key="replacehistory">
+			<item value="freetype"/>
+			<item value="freetype2"/>
 			<item value="libaku.a"/>
 		</list>
 	</section>

@@ -1,0 +1,38 @@
+----------------------------------------------------------------
+-- Copyright (c) 2010-2011 Zipline Games, Inc. 
+-- All Rights Reserved. 
+-- http://getmoai.com
+----------------------------------------------------------------
+
+MOAISim.openWindow ( "test", 768, 1280 )
+
+viewport = MOAIViewport.new ()
+viewport:setSize ( 768, 1280 )
+viewport:setScale ( 320, -480 )
+
+layer = MOAILayer2D.new ()
+layer:setViewport ( viewport )
+MOAISim.pushRenderPass ( layer )
+
+gfxQuad = MOAIGfxQuad2D.new ()
+gfxQuad:setTexture ( "moai.png" )
+gfxQuad:setRect ( -128, -128, 128, 128 )
+gfxQuad:setUVRect ( 0, 0, 1, 1 )
+
+prop = MOAIProp2D.new ()
+prop:setDeck ( gfxQuad )
+layer:insertProp ( prop )
+
+prop:moveRot ( 180, 10 )
+prop:setRot ( 180 )
+
+function update ()
+	while (true) do
+		print ( MOAISim.getElapsedFrames () )
+		MOAISim.update ()
+		coroutine.yield ()
+	end
+end
+
+c = MOAICoroutine.new ()
+c:run ( update )
