@@ -5,13 +5,7 @@
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.debug.253067387">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.debug.253067387" moduleId="org.eclipse.cdt.core.settings" name="Device-Debug">
-				<externalSettings>
-					<externalSetting>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Device-Debug"/>
-						<entry flags="" kind="libraryFile" name="jansson"/>
-					</externalSetting>
-				</externalSettings>
+				<externalSettings/>
 				<extensions>
 					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
@@ -23,15 +17,25 @@
 						<toolChain id="com.qnx.qcc.toolChain.staticLib.debug.236803129" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
 							<option id="com.qnx.qcc.option.cpu.1693152463" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1048328776" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
-							<builder buildPath="${workspace_loc:/jansson/Device-Debug}" id="com.qnx.nto.1403527168" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<builder buildPath="${workspace_loc:/jansson/Device-Debug}" id="com.qnx.nto.1403527168" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Coverage"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Coverage"/>
+								</outputEntries>
+							</builder>
 							<tool id="com.qnx.qcc.tool.compiler.704716372" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.578831170" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.983708448" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.84289217" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/jansson-2.1/src&quot;"/>
+									<listOptionValue builtIn="false" value="../jansson/public"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/jansson-2.1/src"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1724785718" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.2014173832" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
@@ -41,6 +45,15 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.2072751632" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.697062112" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1465721585" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="../jansson/public"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/jansson-2.1/src"/>
+								</option>
+								<option id="com.qnx.qcc.option.assembler.defines.148835872" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.380431667" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.384075966" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -56,7 +69,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -67,8 +79,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Device-Release"/>
 						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -117,7 +131,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -128,8 +141,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Device-Profile"/>
 						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -178,7 +193,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -189,8 +203,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Device-Coverage"/>
 						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -239,7 +255,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -250,8 +265,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Simulator-Debug"/>
 						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -297,7 +314,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -308,8 +324,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Simulator-Profile"/>
 						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -357,7 +375,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -368,8 +385,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Simulator-Coverage"/>
 						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -417,7 +436,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

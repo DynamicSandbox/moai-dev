@@ -1,5 +1,9 @@
 
-**** Build of configuration Device-Debug for project tlsf ****
+**** Rebuild of configuration Device-Debug for project tlsf ****
 
 **** Internal Builder is used for build               ****
-Nothing to build for tlsf
+qcc -o src/tlsf.o ../../../3rdparty/tlsf-2.0/tlsf.c -V4.6.3,gcc_ntoarmv7le -w1 -I../tlsf/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
+qcc -A libtlsf.a src/tlsf.o -V4.6.3,gcc_ntoarmv7le -w1
+/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libtlsf.a
+Build complete for project tlsf
+Time consumed: 278  ms.  

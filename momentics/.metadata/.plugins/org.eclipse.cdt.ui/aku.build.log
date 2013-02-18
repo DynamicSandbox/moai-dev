@@ -2,4 +2,20 @@
 **** Build of configuration Device-Debug for project aku ****
 
 **** Internal Builder is used for build               ****
-Nothing to build for aku
+qcc -o src/AKU-untz.o ../../../src/aku/AKU-untz.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I../aku/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/src/ -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/lua-5.1.3/src -I/Users/nictuku/Documents/development/zipline/moai-dev/src/config-default -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/ -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/tinyxml -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/box2d-2.2.1 -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/chipmunk-5.3.4/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
+In file included from /Users/nictuku/Documents/development/zipline/moai-dev/src/uslscore/uslscore.h:14:0,
+                 from /Users/nictuku/Documents/development/zipline/moai-dev/src/moaicore/pch.h:1,
+                 from /Users/nictuku/Documents/development/zipline/moai-dev/src/moaicore/moaicore.h:7,
+                 from /Users/nictuku/Documents/development/zipline/moai-dev/src/moaiext-untz/MOAIUntzSampleBuffer.h:7,
+                 from ../../../src/aku/AKU-untz.cpp:5:
+/Users/nictuku/Documents/development/zipline/moai-dev/src/uslscore/STLString.h:46:8: note: the mangling of 'va_list' has changed in GCC 4.4
+qcc -o src/AKU.o ../../../src/aku/AKU.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I../aku/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/src/ -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/lua-5.1.3/src -I/Users/nictuku/Documents/development/zipline/moai-dev/src/config-default -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/ -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/tinyxml -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/box2d-2.2.1 -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/chipmunk-5.3.4/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
+In file included from /Users/nictuku/Documents/development/zipline/moai-dev/src/uslscore/uslscore.h:14:0,
+                 from /Users/nictuku/Documents/development/zipline/moai-dev/src/moaicore/pch.h:1,
+                 from /Users/nictuku/Documents/development/zipline/moai-dev/src/moaicore/moaicore.h:7,
+                 from ../../../src/aku/AKU.cpp:11:
+/Users/nictuku/Documents/development/zipline/moai-dev/src/uslscore/STLString.h:46:8: note: the mangling of 'va_list' has changed in GCC 4.4
+qcc -A libaku.a src/AKU.o src/AKU-untz.o -V4.6.3,gcc_ntoarmv7le_cpp -w1
+/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libaku.a
+Build complete for project aku
+Time consumed: 2914  ms.  

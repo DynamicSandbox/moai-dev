@@ -62,6 +62,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/contrib/Device-Debug/libcontrib.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Device-Debug/libtlsf.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/box2d/Device-Debug/libbox2d.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Debug/libmoaiext-untz.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Device-Debug/libjansson.a}&quot;"/>
 									<listOptionValue builtIn="false" value="png"/>
 									<listOptionValue builtIn="false" value="m"/>
@@ -76,6 +77,9 @@
 									<listOptionValue builtIn="false" value="bps"/>
 									<listOptionValue builtIn="false" value="GLESv1_CM"/>
 									<listOptionValue builtIn="false" value="GLESv2"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.565975543" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -162,6 +166,10 @@
 									<listOptionValue builtIn="false" value="freetype2"/>
 									<listOptionValue builtIn="false" value="screen"/>
 									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Debug/libmoaiext-untz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.712235440" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -248,6 +256,10 @@
 									<listOptionValue builtIn="false" value="freetype2"/>
 									<listOptionValue builtIn="false" value="screen"/>
 									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Debug/libmoaiext-untz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.163415657" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -334,6 +346,10 @@
 									<listOptionValue builtIn="false" value="freetype2"/>
 									<listOptionValue builtIn="false" value="screen"/>
 									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Debug/libmoaiext-untz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.814427571" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -417,6 +433,10 @@
 									<listOptionValue builtIn="false" value="freetype2"/>
 									<listOptionValue builtIn="false" value="screen"/>
 									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Debug/libmoaiext-untz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.2061817206" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -502,6 +522,10 @@
 									<listOptionValue builtIn="false" value="freetype2"/>
 									<listOptionValue builtIn="false" value="screen"/>
 									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Debug/libmoaiext-untz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1165548631" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -587,6 +611,10 @@
 									<listOptionValue builtIn="false" value="freetype2"/>
 									<listOptionValue builtIn="false" value="screen"/>
 									<listOptionValue builtIn="false" value="bps"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Debug/libmoaiext-untz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.210426991" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

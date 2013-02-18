@@ -1,0 +1,9 @@
+
+**** Build of configuration Device-Debug for project untz ****
+
+**** Internal Builder is used for build               ****
+qcc -o src/native/openal/RiffFile.o ../../../3rdparty/untz/src/native/openal/RiffFile.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/untz/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/libvorbis-1.3.2/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/libogg-1.2.2/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/native/openal -D_FORTIFY_SOURCE=2 -D__OPENAL__=1 -c -O0 -g -fstack-protector-strong
+qcc -A libuntz.a src/native/openal/WaveFileAudioSource.o src/native/openal/WaveFile.o src/native/openal/UntzSystem.o src/native/openal/RiffFile.o src/UserAudioSource.o src/UntzSound.o src/OggAudioSource.o src/MemoryAudioSource.o src/BufferedAudioSourceThread.o src/BufferedAudioSource.o src/AudioMixer.o -V4.6.3,gcc_ntoarmv7le_cpp -w1
+/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libuntz.a
+Build complete for project untz
+Time consumed: 1408  ms.  

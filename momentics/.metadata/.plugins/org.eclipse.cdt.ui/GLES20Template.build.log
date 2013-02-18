@@ -1,9 +1,5 @@
 
-**** Rebuild of configuration Device-Debug for project GLES20Template ****
+**** Build of configuration Device-Debug for project GLES20Template ****
 
 **** Internal Builder is used for build               ****
-qcc -o src/main.o ../src/main.c -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DUSING_GL20 -c -O0 -g -fstack-protector-strong
-qcc -o src/bbutil.o ../src/bbutil.c -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -D_FORTIFY_SOURCE=2 -DUSING_GL20 -c -O0 -g -fstack-protector-strong
-qcc -o GLES20Template src/main.o src/bbutil.o -lbps -lscreen -lEGL -lGLESv2 -lfreetype -lpng -lm -V4.6.3,gcc_ntoarmv7le_cpp -w1 -lang-c++ -g -Wl,-z,relro -Wl,-z,now -L/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/armle-v7/lib -L/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/armle-v7/usr/lib
-Build complete for project GLES20Template
-Time consumed: 5115  ms.  
+Nothing to build for GLES20Template

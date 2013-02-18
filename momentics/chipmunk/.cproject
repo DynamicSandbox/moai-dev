@@ -5,13 +5,7 @@
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.debug.429624725">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.debug.429624725" moduleId="org.eclipse.cdt.core.settings" name="Device-Debug">
-				<externalSettings>
-					<externalSetting>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk/public"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/chipmunk/Device-Debug"/>
-						<entry flags="" kind="libraryFile" name="chipmunk"/>
-					</externalSetting>
-				</externalSettings>
+				<externalSettings/>
 				<extensions>
 					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
@@ -23,27 +17,46 @@
 						<toolChain id="com.qnx.qcc.toolChain.staticLib.debug.1151322981" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
 							<option id="com.qnx.qcc.option.cpu.829309078" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.977096203" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
-							<builder buildPath="${workspace_loc:/chipmunk/Device-Debug}" id="com.qnx.nto.1326118725" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<builder buildPath="${workspace_loc:/chipmunk/Device-Debug}" id="com.qnx.nto.1326118725" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Coverage"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Coverage"/>
+								</outputEntries>
+							</builder>
 							<tool id="com.qnx.qcc.tool.compiler.1762390130" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.1568019169" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.1934626887" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.331446210" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/chipmunk-5.3.4/include/chipmunk&quot;"/>
+									<listOptionValue builtIn="false" value="../chipmunk/public"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/chipmunk-5.3.4/include/chipmunk"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.109394456" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1443633731" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
-								<option id="com.qnx.qcc.option.compiler.ccoptions.1080356896" superClass="com.qnx.qcc.option.compiler.ccoptions" valueType="stringList">
+								<option id="com.qnx.qcc.option.compiler.ccoptions.1080356896" name="Compiler Options (-Wc,)" superClass="com.qnx.qcc.option.compiler.ccoptions" valueType="stringList">
 									<listOptionValue builtIn="false" value="-std=gnu99"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.957245788" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1600022688" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1224305849" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.722895574" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="../chipmunk/public"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/chipmunk-5.3.4/include/chipmunk"/>
+								</option>
+								<option id="com.qnx.qcc.option.assembler.defines.1205022732" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1382688469" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.664257136" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -59,7 +72,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -70,8 +82,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/chipmunk/Device-Release"/>
 						<entry flags="" kind="libraryFile" name="chipmunk"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="chipmunk"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -120,7 +134,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -131,8 +144,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/chipmunk/Device-Profile"/>
 						<entry flags="" kind="libraryFile" name="chipmunk"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="chipmunk"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -181,7 +196,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -192,8 +206,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/chipmunk/Device-Coverage"/>
 						<entry flags="" kind="libraryFile" name="chipmunk"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="chipmunk"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -242,7 +258,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -253,8 +268,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/chipmunk/Simulator-Debug"/>
 						<entry flags="" kind="libraryFile" name="chipmunk"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="chipmunk"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -300,7 +317,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -311,8 +327,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/chipmunk/Simulator-Profile"/>
 						<entry flags="" kind="libraryFile" name="chipmunk"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="chipmunk"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -360,7 +378,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -371,8 +388,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/chipmunk"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/chipmunk/Simulator-Coverage"/>
 						<entry flags="" kind="libraryFile" name="chipmunk"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="chipmunk"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -420,7 +439,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

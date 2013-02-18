@@ -6,6 +6,8 @@
  */
 
 #include <aku/AKU.h>
+#include <aku/AKU-untz.h>
+
 #include <lua-headers/moai_lua.h>
 
 #include <screen/screen.h>
@@ -92,6 +94,9 @@ int initialize() {
 
     //Initialize AKU
     aku_context_id = AKUCreateContext ();
+
+	AKUUntzInit ();
+
 	AKUSetInputConfigurationName ( "BlackBerry 10" );
 
 	// Initialize input devices
