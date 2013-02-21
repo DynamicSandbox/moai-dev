@@ -121,6 +121,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>src/native/sdl</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>src/native/openal/RiffFile.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/untz/src/native/openal/RiffFile.cpp</locationURI>
@@ -139,6 +144,26 @@
 			<name>src/native/openal/WaveFileAudioSource.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/untz/src/native/openal/WaveFileAudioSource.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/native/sdl/RiffFile.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/untz/src/native/sdl/RiffFile.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/native/sdl/UntzSystem.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/untz/src/native/sdl/UntzSystem.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/native/sdl/WaveFile.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/untz/src/native/sdl/WaveFile.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/native/sdl/WaveFileAudioSource.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/untz/src/native/sdl/WaveFileAudioSource.cpp</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

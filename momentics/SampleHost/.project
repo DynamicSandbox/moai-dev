@@ -3,6 +3,8 @@
 	<name>SampleHost</name>
 	<comment></comment>
 	<projects>
+		<project>SDL</project>
+		<project>TouchControlOverlay</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

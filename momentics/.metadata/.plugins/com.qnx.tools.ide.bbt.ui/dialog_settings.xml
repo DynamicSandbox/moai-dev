@@ -2,6 +2,6 @@
 <section name="Workbench">
 	<section name="add-library-wizard">
 		<item value="NESTED" key="includeDirsPresentation"/>
-		<item value="PLATFORM" key="origin"/>
+		<item value="WORKSPACE" key="origin"/>
 	</section>
 </section>

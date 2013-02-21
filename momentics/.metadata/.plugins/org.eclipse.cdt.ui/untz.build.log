@@ -2,37 +2,34 @@
 **** Build of configuration Device-Debug for project untz ****
 
 **** Internal Builder is used for build               ****
-qcc -o src/native/openal/UntzSystem.o ../../../3rdparty/untz/src/native/openal/UntzSystem.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/untz/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/libvorbis-1.3.2/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/libogg-1.2.2/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/native/openal -D_FORTIFY_SOURCE=2 -D__OPENAL__=1 -c -O0 -g -fstack-protector-strong
+qcc -o src/native/sdl/UntzSystem.o ../../../3rdparty/untz/src/native/sdl/UntzSystem.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/untz/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/libvorbis-1.3.2/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/libogg-1.2.2/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/native/openal -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/SDL/include -D_FORTIFY_SOURCE=2 -D__SDL__ -c -O0 -g -fstack-protector-strong
 In file included from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/threading/Threading.h:12:0,
                  from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/AudioMixer.h:13,
                  from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SystemData.h:12,
-                 from ../../../3rdparty/untz/src/native/openal/UntzSystem.cpp:12:
+                 from ../../../3rdparty/untz/src/native/sdl/UntzSystem.cpp:12:
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/threading/RThread.h:24:4: warning: #warning POSIX will be used (but you did not define it) [-Wcpp]
 In file included from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/threading/Threading.h:13:0,
                  from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/AudioMixer.h:13,
                  from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SystemData.h:12,
-                 from ../../../3rdparty/untz/src/native/openal/UntzSystem.cpp:12:
+                 from ../../../3rdparty/untz/src/native/sdl/UntzSystem.cpp:12:
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/threading/RCriticalSection.h:23:4: warning: #warning POSIX will be used (but you did not define it) [-Wcpp]
 In file included from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/threading/Threading.h:14:0,
                  from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/AudioMixer.h:13,
                  from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SystemData.h:12,
-                 from ../../../3rdparty/untz/src/native/openal/UntzSystem.cpp:12:
+                 from ../../../3rdparty/untz/src/native/sdl/UntzSystem.cpp:12:
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/threading/RSyncEvent.h:25:4: warning: #warning POSIX will be used (but you did not define it) [-Wcpp]
 In file included from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SystemData.h:14:0,
-                 from ../../../3rdparty/untz/src/native/openal/UntzSystem.cpp:12:
+                 from ../../../3rdparty/untz/src/native/sdl/UntzSystem.cpp:12:
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SoundData.h: In constructor 'UNTZ::SoundData::SoundData()':
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SoundData.h:46:13: warning: 'UNTZ::SoundData::mPlayState' will be initialized after [-Wreorder]
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SoundData.h:41:9: warning:   'float UNTZ::SoundData::mVolume' [-Wreorder]
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SoundData.h:27:3: warning:   when initialized here [-Wreorder]
-In file included from ../../../3rdparty/untz/src/native/openal/UntzSystem.cpp:12:0:
+In file included from ../../../3rdparty/untz/src/native/sdl/UntzSystem.cpp:12:0:
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SystemData.h: In member function 'UNTZ::Sound* UNTZ::SystemData::getSound(const RString&)':
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SystemData.h:35:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SystemData.h: In member function 'UNTZ::Sound* UNTZ::SystemData::getInMemorySound(const RString&)':
 /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/untz/src/SystemData.h:46:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../../../3rdparty/untz/src/native/openal/UntzSystem.cpp: In function 'void* audio_loop(void*)':
-../../../3rdparty/untz/src/native/openal/UntzSystem.cpp:114:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-../../../3rdparty/untz/src/native/openal/UntzSystem.cpp:141:1: warning: no return statement in function returning non-void [-Wreturn-type]
-qcc -A libuntz.a src/native/openal/WaveFileAudioSource.o src/native/openal/WaveFile.o src/native/openal/UntzSystem.o src/native/openal/RiffFile.o src/UserAudioSource.o src/UntzSound.o src/OggAudioSource.o src/MemoryAudioSource.o src/BufferedAudioSourceThread.o src/BufferedAudioSource.o src/AudioMixer.o -V4.6.3,gcc_ntoarmv7le_cpp -w1
+qcc -A libuntz.a src/native/sdl/WaveFileAudioSource.o src/native/sdl/WaveFile.o src/native/sdl/UntzSystem.o src/native/sdl/RiffFile.o src/native/openal/WaveFileAudioSource.o src/native/openal/WaveFile.o src/native/openal/UntzSystem.o src/native/openal/RiffFile.o src/UserAudioSource.o src/UntzSound.o src/OggAudioSource.o src/MemoryAudioSource.o src/BufferedAudioSourceThread.o src/BufferedAudioSource.o src/AudioMixer.o -V4.6.3,gcc_ntoarmv7le_cpp -w1
 /Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libuntz.a
 Build complete for project untz
-Time consumed: 808  ms.  
+Time consumed: 666  ms.  

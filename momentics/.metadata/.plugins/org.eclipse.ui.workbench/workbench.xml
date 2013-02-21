@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="26" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="783" maximized="true" width="1316" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -21,9 +21,9 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.qnx.tools.bbt.xml.internal.ui.editor.bbtxml.BBTXMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.qnx.tools.bbt.xml.internal.ui.editor.bbtxml.BBTXMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -32,10 +32,40 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="RiffFile.cpp" partName="RiffFile.cpp" path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/src/native/sdl/RiffFile.cpp" title="RiffFile.cpp" tooltip="untz/src/native/sdl/RiffFile.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/untz/src/native/sdl/RiffFile.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3360" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.cpp" partName="UntzSystem.cpp" path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/src/native/sdl/UntzSystem.cpp" title="UntzSystem.cpp" tooltip="untz/src/native/sdl/UntzSystem.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/untz/src/native/sdl/UntzSystem.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1498" selectionTopPixel="976"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.h" partName="UntzSystem.h" title="UntzSystem.h" tooltip="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h" project="untz"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="/Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/src/main.cpp" title="main.cpp" tooltip="SampleHost/src/main.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SampleHost/src/main.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2759" selectionTopPixel="1673"/>
+</editor>
+<editor id="com.qnx.tools.bbt.xml.internal.ui.editor.bbtxml.BBTXMLEditor" name="bar-descriptor.xml" partName="bar-descriptor.xml" path="/Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/bar-descriptor.xml" title="bar-descriptor.xml" tooltip="SampleHost/bar-descriptor.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SampleHost/bar-descriptor.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="main.lua" partName="main.lua" path="/Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/assets/main.lua" title="main.lua" tooltip="SampleHost/assets/main.lua" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SampleHost/assets/main.lua"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="811" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="com.qnx.tools.ide.sysinfo.internal.ui.mallocview" partName="Malloc Information"/>
@@ -221,27 +251,18 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.8278336" ratioLeft="577" ratioRight="120" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.8235294" ratioLeft="574" ratioRight="123" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="com.qnx.tools.ide.bbt.debug.internal.ui.views.DeviceLogView" label="Device Log"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -250,8 +271,7 @@
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -260,26 +280,20 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44990176" ratioLeft="229" ratioRight="280" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="508" ratioRight="508" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="508" ratioRight="508" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -416,7 +430,165 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SampleHost/src/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/untz/src/native/sdl/UntzSystem.cpp"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h" project="untz"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/untz/src/native/sdl/RiffFile.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/SampleHost/assets/main.lua"/>
+</editors>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="UntzSystem.h" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="2001" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1861" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2680" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2680" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1350" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2680" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1563" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2680" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1563" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1565" y="43"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1565" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2670" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1565" y="43"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2762" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2665" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1565" y="0"/>
+</item>
+<item historyLabel="RiffFile.cpp" index="3">
+<position info="not_deleted" x="3360" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="2396" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2763" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1752" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2680" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1752" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1498" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2680" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="1">
+<position info="not_deleted" x="1498" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="0">
+<position info="not_deleted" x="2759" y="0"/>
+</item>
+<item active="true" historyLabel="main.lua" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -433,41 +605,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="BufferedAudioSource.cpp" tooltip="untz/src/BufferedAudioSource.cpp">
-<persistable path="/untz/src/BufferedAudioSource.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="main.lua" tooltip="SampleHost/assets/main.lua">
+<persistable path="/SampleHost/assets/main.lua"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.qnx.tools.bbt.xml.internal.ui.editor.bbtxml.BBTXMLEditor" name="bar-descriptor.xml" tooltip="SampleHost/bar-descriptor.xml">
+<persistable path="/SampleHost/bar-descriptor.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="SampleHost/src/main.cpp">
 <persistable path="/SampleHost/src/main.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="main.lua" tooltip="SampleHost/assets/main.lua">
-<persistable path="/SampleHost/assets/main.lua"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.cpp" tooltip="untz/src/native/openal/UntzSystem.cpp">
-<persistable path="/untz/src/native/openal/UntzSystem.cpp"/>
-</file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="al.h" tooltip="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/AL/al.h">
-<persistable path="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/AL/al.h" project="untz"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="AudioMixer.cpp" tooltip="untz/src/AudioMixer.cpp">
-<persistable path="/untz/src/AudioMixer.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MOAISim.cpp" tooltip="moaicore/src/MOAISim.cpp">
-<persistable path="/moaicore/src/MOAISim.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="USDeviceTime_posix.cpp" tooltip="uslscore/src/USDeviceTime_posix.cpp">
-<persistable path="/uslscore/src/USDeviceTime_posix.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSound.cpp" tooltip="untz/src/UntzSound.cpp">
+<persistable path="/untz/src/UntzSound.cpp"/>
 </file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.h" tooltip="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h">
 <persistable path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h" project="untz"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="bbutil.h" tooltip="SampleHost/src/bbutil.h">
-<persistable path="/SampleHost/src/bbutil.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.cpp" tooltip="untz/src/native/sdl/UntzSystem.cpp">
+<persistable path="/untz/src/native/sdl/UntzSystem.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaveFileAudioSource.cpp" tooltip="untz/src/native/sdl/WaveFileAudioSource.cpp">
+<persistable path="/untz/src/native/sdl/WaveFileAudioSource.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaveFile.cpp" tooltip="untz/src/native/sdl/WaveFile.cpp">
+<persistable path="/untz/src/native/sdl/WaveFile.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="RiffFile.cpp" tooltip="untz/src/native/sdl/RiffFile.cpp">
+<persistable path="/untz/src/native/sdl/RiffFile.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaveFileAudioSource.cpp" tooltip="untz/src/native/openal/WaveFileAudioSource.cpp">
+<persistable path="/untz/src/native/openal/WaveFileAudioSource.cpp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaveFile.cpp" tooltip="untz/src/native/openal/WaveFile.cpp">
 <persistable path="/untz/src/native/openal/WaveFile.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSound.cpp" tooltip="untz/src/UntzSound.cpp">
-<persistable path="/untz/src/UntzSound.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="RiffFile.cpp" tooltip="untz/src/native/openal/RiffFile.cpp">
+<persistable path="/untz/src/native/openal/RiffFile.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SDL_playbookvideo_8bit.c" tooltip="SDL/src/video/playbook/SDL_playbookvideo_8bit.c">
+<persistable path="/SDL/src/video/playbook/SDL_playbookvideo_8bit.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.cpp" tooltip="untz/src/native/openal/UntzSystem.cpp">
+<persistable path="/untz/src/native/openal/UntzSystem.cpp"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MOAIFmodEx.h" tooltip="/Users/nictuku/Documents/development/zipline/moai-dev/src/moaiext-fmod-ex/MOAIFmodEx.h">
+<persistable path="/Users/nictuku/Documents/development/zipline/moai-dev/src/moaiext-fmod-ex/MOAIFmodEx.h" project="moaiext-fmod-ex"/>
 </file>
 </mruList>
 </workbench>

@@ -36,11 +36,12 @@
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libvorbis-1.3.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libogg-1.2.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/untz/src/native/openal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.396144378" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1771112887" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
-									<listOptionValue builtIn="false" value="__OPENAL__=1"/>
+									<listOptionValue builtIn="false" value="__SDL__"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.1085160438" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -102,10 +103,12 @@
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libvorbis-1.3.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libogg-1.2.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/untz/src/native/openal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.595642113" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.2146213392" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="__SDL__"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.pie.1927765262" name="Position Independent Executable (-fPIE)" superClass="com.qnx.qcc.option.compiler.pie" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.qccoptions.1535869189" name="QCC Options" superClass="com.qnx.qcc.option.compiler.qccoptions" valueType="stringList">
@@ -169,10 +172,12 @@
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libvorbis-1.3.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libogg-1.2.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/untz/src/native/openal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1836828183" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1841217710" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="__SDL__"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.590833782" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -234,10 +239,12 @@
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libvorbis-1.3.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libogg-1.2.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/untz/src/native/openal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.356299876" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1019076892" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="__SDL__"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.159160802" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -297,10 +304,12 @@
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libvorbis-1.3.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libogg-1.2.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/untz/src/native/openal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1659824612" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.57356342" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="__SDL__"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.943878225" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -360,10 +369,12 @@
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libvorbis-1.3.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libogg-1.2.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/untz/src/native/openal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1925780238" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.405361541" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="__SDL__"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.781149080" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -424,10 +435,12 @@
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libvorbis-1.3.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libogg-1.2.2/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/untz/src/native/openal&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/SDL/include}&quot;"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1600543929" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.964098438" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="__SDL__"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.1675060637" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>

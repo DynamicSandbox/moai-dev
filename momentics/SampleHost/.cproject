@@ -24,6 +24,9 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.359739064" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.721564311" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.488559127" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -39,12 +42,17 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.680624061" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1268949674" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1074560115" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath"/>
 								<inputType id="com.qnx.qcc.inputType.assembler.1221585446" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1295896492" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.debug.1783686628" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.381419061" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.442241743" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Device-Debug}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
@@ -83,6 +91,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
 									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="SDL"/>
+									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.565975543" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -97,7 +108,19 @@
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.2076896560" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/TouchControlOverlay"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Device-Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/TouchControlOverlay/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="TouchControlOverlay"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.debug.1551432411" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.exe.release.1622638600">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.release.1622638600" moduleId="org.eclipse.cdt.core.settings" name="Device-Release">
@@ -119,6 +142,8 @@
 							<tool id="com.qnx.qcc.tool.compiler.1726578108" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.1028250169" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.2" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.907016047" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -136,17 +161,24 @@
 								<inputType id="com.qnx.qcc.inputType.compiler.2072661709" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1562805673" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.includePath.865836901" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1995580596" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1437386172" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.langcpp.2120886699" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1147210072" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Release}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Device-Release}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.pie.2116637114" name="Position Independent Executable (-pie)" superClass="com.qnx.qcc.option.linker.pie" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.29421227" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1407407705" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="emulate"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
@@ -176,6 +208,10 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 									<listOptionValue builtIn="false" value="alut"/>
 									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="SDL"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
+									<listOptionValue builtIn="false" value="xml2"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.712235440" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -190,7 +226,16 @@
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.release.640306231" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Device-Release"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.release.1970482052" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.exe.profile.654604249">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.654604249" moduleId="org.eclipse.cdt.core.settings" name="Device-Profile">
@@ -214,6 +259,9 @@
 								<option id="com.qnx.qcc.option.compile.debug.1111583363" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.profile2.161407371" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.89586542" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -228,6 +276,10 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1048335747" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1746903183" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1062410065" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.276302026" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.519298761" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -235,11 +287,17 @@
 								<option id="com.qnx.qcc.option.linker.profile2.975717774" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.924205837" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.339536427" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Device-Profile}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1936073571" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.281284873" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="emulate"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
@@ -269,6 +327,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 									<listOptionValue builtIn="false" value="alut"/>
 									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="SDL"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
+									<listOptionValue builtIn="false" value="xml2"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.163415657" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -283,7 +344,19 @@
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.2076896560" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/TouchControlOverlay"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Device-Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/TouchControlOverlay/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="TouchControlOverlay"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.profile.366549893" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.exe.profile.coverage.588828591">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.coverage.588828591" moduleId="org.eclipse.cdt.core.settings" name="Device-Coverage">
@@ -307,6 +380,9 @@
 								<option id="com.qnx.qcc.option.compile.debug.1178878546" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.coverage.323919107" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1420834846" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -321,6 +397,10 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1868403802" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1931059870" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1459042226" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.760243235" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.593738354" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -328,11 +408,17 @@
 								<option id="com.qnx.qcc.option.linker.coverage.615101468" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.88722105" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.59744636" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Device-Coverage}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.614294850" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1746336897" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="emulate"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
@@ -362,6 +448,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 									<listOptionValue builtIn="false" value="alut"/>
 									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="SDL"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
+									<listOptionValue builtIn="false" value="xml2"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.814427571" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -376,7 +465,19 @@
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.2076896560" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/TouchControlOverlay"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Device-Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/TouchControlOverlay/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="TouchControlOverlay"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.coverage.327278952" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.exe.debug.345852293">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.debug.345852293" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Debug">
@@ -398,6 +499,8 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.534353531" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.150259335" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1764412489" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -412,17 +515,24 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.12569451" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1901878535" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1603501178" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.2141530057" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.743731932" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.debug.1740740049" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.1263258466" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.470702158" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Simulator-Debug}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1174304488" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1700230151" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="emulate"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
@@ -452,6 +562,10 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 									<listOptionValue builtIn="false" value="alut"/>
 									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="SDL"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
+									<listOptionValue builtIn="false" value="xml2"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.2061817206" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -466,7 +580,16 @@
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.673227420" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Simulator"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.debug.389344599" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.exe.profile.1883450543">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.1883450543" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Profile">
@@ -489,6 +612,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.2023127734" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.profile2.1969735530" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1407634283" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -503,6 +628,9 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1171345702" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1141109995" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.54469893" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.954923682" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1456466906" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -510,11 +638,15 @@
 								<option id="com.qnx.qcc.option.linker.profile2.57582323" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.963616128" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.286804748" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Simulator-Profile}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.2054975363" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1740978761" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="emulate"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
@@ -544,6 +676,10 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 									<listOptionValue builtIn="false" value="alut"/>
 									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="SDL"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
+									<listOptionValue builtIn="false" value="xml2"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1165548631" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -558,7 +694,16 @@
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.673227420" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Simulator"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.profile.1424221911" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.exe.profile.coverage.1487654264">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.coverage.1487654264" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Coverage">
@@ -581,6 +726,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.1854254233" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.coverage.939248679" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1745592114" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -595,6 +742,9 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.684415970" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1174129874" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1306237617" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.823014193" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1929606521" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -602,11 +752,15 @@
 								<option id="com.qnx.qcc.option.linker.coverage.198125728" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.1211648983" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1405569748" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Simulator-Coverage}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1240701145" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1035639642" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="emulate"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
@@ -636,6 +790,10 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 									<listOptionValue builtIn="false" value="alut"/>
 									<listOptionValue builtIn="false" value="OpenAL"/>
+									<listOptionValue builtIn="false" value="SDL"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
+									<listOptionValue builtIn="false" value="xml2"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.210426991" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -650,7 +808,16 @@
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.673227420" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Simulator"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.coverage.293903173" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
