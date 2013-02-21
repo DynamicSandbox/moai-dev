@@ -4803,3 +4803,335 @@ com.qnx.tools.ide.utils.target.RemoteIOException: No such file or directory
 
 !ENTRY com.qnx.tools.bbt.core 4 0 2013-02-18 20:27:08.660
 !MESSAGE Unable to determine the application exit code
+!SESSION 2013-02-18 20:35:03.509 -----------------------------------------------
+eclipse.buildId=10.0.9
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/nictuku/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/nictuku/.eclipse_keyring -showlocation
+
+!ENTRY com.qnx.tools.ide.bbt.core 2 -1 2013-02-18 20:35:09.796
+!MESSAGE No category "null" is defined in the library descriptors.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-02-18 20:35:16.958
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-02-18 20:35:16.958
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@13cba41),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@13cba41)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@13cba41),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@13cba41)),sourcePriority=16640)
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-02-18 21:03:55.787
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.qnx.tools.ide.bbt.debug.core.internal.launch.BlackBerryTabletOSProcess$IsAppRunningJob
+!SESSION 2013-02-20 15:07:11.608 -----------------------------------------------
+eclipse.buildId=10.0.9
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/nictuku/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/nictuku/.eclipse_keyring -showlocation
+
+!ENTRY com.qnx.tools.ide.bbt.core 2 -1 2013-02-20 15:07:33.161
+!MESSAGE No category "null" is defined in the library descriptors.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-02-20 15:07:36.339
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-02-20 15:07:36.339
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@30f369),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@30f369)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@30f369),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@30f369)),sourcePriority=16640)
+
+!ENTRY org.eclipse.core.net 1 0 2013-02-20 15:07:37.406
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2013-02-20 15:27:07.388
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/Device-Debug/SampleHost not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:123)
+	at com.qnx.tools.ide.bbt.debug.core.internal.launch.BBTLauncher.init(BBTLauncher.java:361)
+	at com.qnx.tools.ide.bbt.debug.ui.internal.launch.BBTLaunchConfigurationDelegate$1.doRun(BBTLaunchConfigurationDelegate.java:72)
+	at com.qnx.tools.ide.qde.internal.ui.launch.QDELaunchConfigurationDelegate$QDELaunchJob.run(QDELaunchConfigurationDelegate.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2013-02-20 15:27:07.389
+!MESSAGE /Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/Device-Debug/SampleHost not found
+!STACK 0
+java.io.FileNotFoundException: /Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/Device-Debug/SampleHost not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:123)
+	at com.qnx.tools.ide.bbt.debug.core.internal.launch.BBTLauncher.init(BBTLauncher.java:361)
+	at com.qnx.tools.ide.bbt.debug.ui.internal.launch.BBTLaunchConfigurationDelegate$1.doRun(BBTLaunchConfigurationDelegate.java:72)
+	at com.qnx.tools.ide.qde.internal.ui.launch.QDELaunchConfigurationDelegate$QDELaunchJob.run(QDELaunchConfigurationDelegate.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.ui 4 4 2013-02-20 15:47:05.327
+!MESSAGE Error
+!STACK 1
+C Model Exception: Core Exception [code 77] Only virtual folders and links can be created under a virtual folder.
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:47)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:339)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:602)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1233)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:84)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Only virtual folders and links can be created under a virtual folder.
+	at org.eclipse.core.internal.resources.Resource.checkValidGroupContainer(Resource.java:458)
+	at org.eclipse.core.internal.resources.File.create(File.java:115)
+	at org.eclipse.core.internal.resources.File.create(File.java:187)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:162)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:121)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createHeaderFile(NewSourceFileGenerator.java:105)
+	at org.eclipse.cdt.internal.ui.wizards.classwizard.NewClassCodeGenerator.createClass(NewClassCodeGenerator.java:207)
+	at org.eclipse.cdt.ui.wizards.NewClassCreationWizardPage.createClass(NewClassCreationWizardPage.java:2076)
+	at org.eclipse.cdt.ui.wizards.NewClassCreationWizardPage.createClass(NewClassCreationWizardPage.java:2034)
+	at org.eclipse.cdt.internal.ui.wizards.NewClassCreationWizard.finishPage(NewClassCreationWizard.java:60)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard$2.run(NewElementWizard.java:100)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	... 6 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 966 2013-02-20 15:47:05.328
+!MESSAGE Only virtual folders and links can be created under a virtual folder.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Only virtual folders and links can be created under a virtual folder.
+	at org.eclipse.core.internal.resources.Resource.checkValidGroupContainer(Resource.java:458)
+	at org.eclipse.core.internal.resources.File.create(File.java:115)
+	at org.eclipse.core.internal.resources.File.create(File.java:187)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:162)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:150)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createEmptyFile(NewSourceFileGenerator.java:121)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createHeaderFile(NewSourceFileGenerator.java:105)
+	at org.eclipse.cdt.internal.ui.wizards.classwizard.NewClassCodeGenerator.createClass(NewClassCodeGenerator.java:207)
+	at org.eclipse.cdt.ui.wizards.NewClassCreationWizardPage.createClass(NewClassCreationWizardPage.java:2076)
+	at org.eclipse.cdt.ui.wizards.NewClassCreationWizardPage.createClass(NewClassCreationWizardPage.java:2034)
+	at org.eclipse.cdt.internal.ui.wizards.NewClassCreationWizard.finishPage(NewClassCreationWizard.java:60)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard$2.run(NewElementWizard.java:100)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:339)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:602)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1233)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:84)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2013-02-20 15:47:05.329
+!MESSAGE Only virtual folders and links can be created under a virtual folder.
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:22:06.838
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:22:06.942
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:22:09.482
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:22:09.539
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:22:35.701
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:22:37.095
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:22:37.124
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2013-02-20 17:24:39.553
+!MESSAGE Unable to locate file: ../../../3rdparty/untz/src/AudioMixer.cpp
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:28:29.889
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:28:31.103
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:28:31.359
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:28:32.645
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 17:28:34.070
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 18:41:40.472
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 18:41:41.994
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 18:41:42.094
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 18:59:02.021
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 18:59:03.442
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 18:59:03.473
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:36:18.720
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:36:19.958
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:36:20.225
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2013-02-20 19:37:10.595
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@14acc4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-finish
+Error message from debugger back end:
+Warning:
+Cannot insert breakpoint 0.
+Error accessing memory address 0x7828af9a: Operation not permitted.
+ java.lang.Exception: Warning:
+Cannot insert breakpoint 0.
+Error accessing memory address 0x7828af9a: Operation not permitted.
+' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2013-02-20 19:37:10.595
+!MESSAGE Failed to execute MI command:
+-exec-finish
+Error message from debugger back end:
+Warning:
+Cannot insert breakpoint 0.
+Error accessing memory address 0x7828af9a: Operation not permitted.
+
+!STACK 0
+java.lang.Exception: Warning:
+Cannot insert breakpoint 0.
+Error accessing memory address 0x7828af9a: Operation not permitted.
+
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:889)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:720)
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:40:51.875
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:40:53.250
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:40:53.312
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:42:21.377
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:42:22.744
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 19:42:22.792
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-02-20 19:53:41.923
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.qnx.tools.ide.bbt.debug.core.internal.launch.BlackBerryTabletOSProcess$IsAppRunningJob
+!SESSION 2013-02-20 20:46:18.274 -----------------------------------------------
+eclipse.buildId=10.0.9
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/nictuku/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/nictuku/Documents/development/zipline/moai-dev/momentics -keyring /Users/nictuku/.eclipse_keyring -showlocation
+
+!ENTRY com.qnx.tools.ide.bbt.core 2 -1 2013-02-20 20:46:22.765
+!MESSAGE No category "null" is defined in the library descriptors.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-02-20 20:46:23.531
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-02-20 20:46:23.531
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@d507d3),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@d507d3)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@d507d3),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@d507d3)),sourcePriority=16640)
+
+!ENTRY org.eclipse.core.net 1 0 2013-02-20 20:46:23.725
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:49:22.481
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:49:23.908
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:49:23.928
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:56:07.408
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:56:07.498
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:56:09.570
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:56:09.607
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:56:37.893
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:56:39.802
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:56:39.806
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:58:54.654
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:58:55.848
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 20:58:56.101
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2013-02-20 21:01:48.563
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@c58727): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+The program is not being run. java.lang.Exception: The program is not being run.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2013-02-20 21:01:48.563
+!MESSAGE Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+The program is not being run.
+!STACK 0
+java.lang.Exception: The program is not being run.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:889)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:720)
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 21:05:04.881
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 21:05:04.970
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 21:05:06.529
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY com.qnx.tools.bbt.core 4 0 2013-02-20 21:05:06.567
+!MESSAGE Unable to determine the application exit code
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-02-20 21:16:20.316
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.qnx.tools.ide.bbt.debug.core.internal.launch.BlackBerryTabletOSProcess$IsAppRunningJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-02-20 21:16:20.317
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.qnx.tools.ide.bbt.debug.core.internal.launch.BlackBerryTabletOSProcess$IsAppRunningJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-02-20 21:16:20.318
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.qnx.tools.ide.bbt.debug.core.internal.launch.BlackBerryTabletOSProcess$IsAppRunningJob

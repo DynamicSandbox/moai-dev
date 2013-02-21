@@ -4,7 +4,7 @@
 //  UntzSystem.cpp
 //  Part of UNTZ
 //
-//  Created by Francisco Tufró. (francisco@ziplinegames.com) on 02/18/2013.
+//  Created by Francisco Tufro. (francisco@ziplinegames.com) on 02/18/2013.
 //  Copyright (c) 2010-2011 Zipline Games, Inc. All Rights Reserved.
 //
 
@@ -16,40 +16,13 @@
 #include <string.h>
 
 #include <AL/al.h>
+#include <AL/alut.h>
+#include <pthread.h>
+#include <math.h>
 
 using namespace UNTZ;
 
-
-//int RtInOut( void* outputBuffer, void* inputBuffer, unsigned int framesPerBuffer,
-//			double streamTime, RtAudioStreamStatus status, void *userdata )
-//{
-//	if(!UNTZ::System::get()->getData()->isActive())
-//	{
-//		memset(outputBuffer, 0, sizeof(float) * framesPerBuffer * UNTZ::System::get()->getData()->getNumOutputChannels());
-//		return 0;
-//	}
-//
-//	if(status)
-//		std::cout << "Stream underflow detected!" << std::endl;
-//	AudioMixer *mixer = (AudioMixer*)userdata;
-//	mixer->process(0, NULL, UNTZ::System::get()->getData()->getNumOutputChannels(), (float*)outputBuffer, framesPerBuffer);
-//
-//    // volume & clipping
-//    // HBS
-//    UInt32 samples = UNTZ::System::get()->getData()->getNumOutputChannels() * framesPerBuffer;
-//	float volume = mixer->getVolume();
-//    // TODO: doing an extra read/write here is painful...
-//    float *outB = (float*)outputBuffer;
-//    for(UInt32 k = 0; k < samples; ++k)
-//    {
-//        float val = *outB * volume;
-//        val = val > 1.0 ? 1.0 : val;
-//        val = val < -1.0 ? -1.0 : val;
-//        *(outB)++ = val;
-//    }
-//
-//	return 0;
-//}
+#define CHANNELS 2
 
 class ALSystemData : public UNTZ::SystemData
 {
@@ -58,6 +31,8 @@ public:
     ~ALSystemData() {}
     UInt32 getNumFrames();
     UInt32 getNumOutputChannels();
+
+    pthread_t mAudioThread;
 
     UInt32 mSampleRate;
     UInt32 mFramesPerBuffer;
@@ -71,7 +46,98 @@ UInt32 ALSystemData::getNumFrames()
 }
 UInt32 ALSystemData::getNumOutputChannels()
 {
-    return 2;
+    return CHANNELS;
+}
+
+static inline SInt16 limit_float_conv_SInt16(float inValue)
+{
+    return (SInt16)((1-2*signbit(inValue)) * atanf(fabs(inValue) * 2.0f) * ((2.0f / 3.14f) * 32767));
+}
+
+void *audio_loop (void *ptr) {
+	fprintf(stdout, "Audio Thread running\n:");
+
+	alutInit(0, NULL);
+	alGetError();
+
+	ALuint source;
+	alGenSources(1, &source);
+
+	ALuint buffer;
+	alGenBuffers(1, &buffer);
+    if(alGetError() != AL_NO_ERROR)
+    {
+        fprintf(stderr, "Error generating\n");
+    }
+
+
+	ALSystemData* alsd = (ALSystemData*) System::get ()->getData ();
+	UInt32 framesPerBuffer = alsd->getNumFrames ();
+
+	ALenum error;
+
+	alSourceQueueBuffers(source, 1, &buffer);
+    if(alGetError() != AL_NO_ERROR)
+    {
+        fprintf(stderr, "Error queuing\n");
+    }
+	alSourcePlay(source);
+    if(alGetError() != AL_NO_ERROR)
+    {
+        fprintf(stderr, "Error playing\n");
+    }
+
+
+	while(true){
+		ALint val;
+
+        alGetSourcei(source, AL_BUFFERS_PROCESSED, &val);
+		if ((error = alGetError()) != AL_NO_ERROR)
+		{
+			printf("alGetSourcei: %d\n", error);
+		}
+
+        if(val <= 0)
+            continue;
+
+        alSourceUnqueueBuffers(source, 1, &buffer);
+
+		float float_buffer[ CHANNELS * framesPerBuffer ];
+		alsd->mMixer.process ( 0, NULL, CHANNELS, float_buffer, framesPerBuffer );
+
+		float volume = alsd->mMixer.getVolume();
+
+		// Convert left-right buffers to short samples and interleave.
+		SInt16 int_buffer[ CHANNELS * framesPerBuffer ];
+		SInt16 *outbuf = &int_buffer[0];
+
+	    for(int i=0; i<framesPerBuffer ; i++)
+	    {
+	        for(int j=0; j<CHANNELS; j++)
+	        {
+	        	*(outbuf++) = limit_float_conv_SInt16(volume * float_buffer[j*framesPerBuffer+i]); // HBS
+	        }
+	    }
+
+		alBufferData ( buffer, AL_FORMAT_STEREO16, &int_buffer[0], sizeof(SInt16) * CHANNELS * framesPerBuffer , alsd->mSampleRate);
+
+        if(alGetError() != AL_NO_ERROR)
+         {
+             fprintf(stderr, "Error buffering data:(\n");
+         }
+		alSourceQueueBuffers ( source, 1, &buffer );
+        if(alGetError() != AL_NO_ERROR)
+         {
+             fprintf(stderr, "Error buffering :(\n");
+         }
+
+		alGetSourcei ( source, AL_SOURCE_STATE, &val );
+		if ( val != AL_PLAYING )
+			alSourcePlay(source);
+
+	}
+
+
 }
 
 System* System::msInstance = 0;
@@ -84,40 +150,29 @@ System::System(UInt32 sampleRate, UInt32 numFrames, UInt32 options)
 	alsd->mOptions = options;
 	mpData = alsd;
 
-//	RtAudio::StreamParameters outParams;
-//	outParams.nChannels = 2;
-//	outParams.deviceId = wsd->audioIO.getDefaultOutputDevice();
-//	RtAudio::StreamOptions streamOptions;
-//	streamOptions.flags = 0 | RTAUDIO_MINIMIZE_LATENCY | RTAUDIO_NONINTERLEAVED;
-//	try
-//	{
-//		wsd->audioIO.openStream( &outParams, NULL, RTAUDIO_FLOAT32, sampleRate, &numFrames, &RtInOut, (void *)&mpData->mMixer, &streamOptions );
-//		wsd->audioIO.startStream();
-//	}
-//	catch(RtError& error)
-//	{
-//		wsd->setError(true);
-//		printf("!!!AudioIO Error: %s\n", error.getMessage());
-//	}
+	int iret1 = pthread_create( &alsd->mAudioThread, NULL, audio_loop, NULL);
 }
 
 System::~System()
 {
+	alutExit();
+
 	if(mpData)
 		delete mpData;
 }
 
-//void System::shutdown()
-//{
-//	if(msInstance)
-//	{
-//		delete msInstance;
-//		msInstance = 0;
-//	}
-//}
-//
+void System::shutdown()
+{
+	if(msInstance)
+	{
+		delete msInstance;
+		msInstance = 0;
+	}
+}
+
 System* System::initialize(UInt32 sampleRate, UInt32 numFrames, UInt32 options)
 {
+
 	if(!msInstance)
 	{
 		msInstance = new System(sampleRate, numFrames, options);
@@ -169,5 +224,6 @@ void System::resume()
 {
 	msInstance->mpData->setActive(true);
 }
+
 
 #endif

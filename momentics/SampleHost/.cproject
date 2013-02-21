@@ -24,6 +24,7 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.359739064" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.721564311" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.488559127" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -78,8 +79,10 @@
 									<listOptionValue builtIn="false" value="GLESv1_CM"/>
 									<listOptionValue builtIn="false" value="GLESv2"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
+									<listOptionValue builtIn="false" value="alut"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.565975543" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -116,6 +119,7 @@
 							<tool id="com.qnx.qcc.tool.compiler.1726578108" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.1028250169" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.2" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.907016047" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -170,6 +174,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
+									<listOptionValue builtIn="false" value="alut"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.712235440" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -208,6 +214,7 @@
 								<option id="com.qnx.qcc.option.compile.debug.1111583363" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.profile2.161407371" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.89586542" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -260,6 +267,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
+									<listOptionValue builtIn="false" value="alut"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.163415657" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -298,6 +307,7 @@
 								<option id="com.qnx.qcc.option.compile.debug.1178878546" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.coverage.323919107" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1420834846" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -350,6 +360,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
+									<listOptionValue builtIn="false" value="alut"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.814427571" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -386,6 +398,7 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.534353531" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.150259335" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1764412489" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -437,6 +450,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
+									<listOptionValue builtIn="false" value="alut"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.2061817206" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -474,6 +489,7 @@
 								<option id="com.qnx.qcc.option.compile.debug.2023127734" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.profile2.1969735530" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1407634283" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -526,6 +542,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
+									<listOptionValue builtIn="false" value="alut"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1165548631" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -563,6 +581,7 @@
 								<option id="com.qnx.qcc.option.compile.debug.1854254233" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.coverage.939248679" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1745592114" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -615,6 +634,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
+									<listOptionValue builtIn="false" value="alut"/>
+									<listOptionValue builtIn="false" value="OpenAL"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.210426991" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

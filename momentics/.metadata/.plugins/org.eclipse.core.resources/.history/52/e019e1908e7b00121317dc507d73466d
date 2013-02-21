@@ -1,0 +1,22 @@
+//
+//  OpenALSource.h
+//  Part of UNTZ
+//
+//  Created by Francisco Tufro. (francisco@ziplinegames.com) on 02/20/2013.
+//  Copyright (c) 2010-2011 Zipline Games, Inc. All Rights Reserved.
+//
+
+#ifndef OPENALSOURCE_H_
+#define OPENALSOURCE_H_
+
+namespace UNTZ {
+
+class OpenALSource {
+public:
+	OpenALSource();
+	virtual ~OpenALSource();
+
+};
+
+} /* namespace UNTZ */
+#endif /* OPENALSOURCE_H_ */

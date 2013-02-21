@@ -1,0 +1,21 @@
+/*
+ * OpenALSource.cpp
+ *
+ *  Created on: Feb 20, 2013
+ *      Author: nictuku
+ */
+
+#include "OpenALSource.h"
+
+namespace UNTZ {
+
+OpenALSource::OpenALSource() {
+	// TODO Auto-generated constructor stub
+
+}
+
+OpenALSource::~OpenALSource() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace UNTZ */

@@ -10,7 +10,7 @@
 #include <assert.h>
 
 #ifdef __QNX__
-#include <string.h>
+#include<string.h>
 #endif
 
 WaveFile::WaveFile()
