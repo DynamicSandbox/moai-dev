@@ -7,6 +7,7 @@
 
 #include <aku/AKU.h>
 #include <aku/AKU-untz.h>
+#include <aku/AKU-luaext.h>
 
 #include <lua-headers/moai_lua.h>
 
@@ -96,6 +97,11 @@ int initialize() {
     aku_context_id = AKUCreateContext ();
 
 	AKUUntzInit ();
+	AKUExtLoadLuacrypto ();
+	AKUExtLoadLuacurl ();
+	AKUExtLoadLuafilesystem ();
+	AKUExtLoadLuasocket ();
+	AKUExtLoadLuasql ();
 
 	AKUSetInputConfigurationName ( "BlackBerry 10" );
 

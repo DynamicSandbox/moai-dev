@@ -5,6 +5,24 @@
 	<projects>
 		<project>SDL</project>
 		<project>TouchControlOverlay</project>
+		<project>uslscore</project>
+		<project>tlsf</project>
+		<project>untz</project>
+		<project>expat</project>
+		<project>vorbis</project>
+		<project>moaiext-untz</project>
+		<project>aku</project>
+		<project>jansson</project>
+		<project>tinyxml</project>
+		<project>moaicore</project>
+		<project>box2d</project>
+		<project>luaext</project>
+		<project>contrib</project>
+		<project>zlcore</project>
+		<project>lua</project>
+		<project>chipmunk</project>
+		<project>ogg</project>
+		<project>jpeg</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

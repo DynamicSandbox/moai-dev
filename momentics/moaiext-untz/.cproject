@@ -5,80 +5,115 @@
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.debug.1661205482">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.debug.1661205482" moduleId="org.eclipse.cdt.core.settings" name="Device-Debug">
-				<externalSettings>
-					<externalSetting>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Device-Debug"/>
-						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
-					</externalSetting>
-				</externalSettings>
+				<externalSettings/>
 				<extensions>
 					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" description="" id="com.qnx.qcc.configuration.staticLib.debug.1661205482" name="Device-Debug" parent="com.qnx.qcc.configuration.staticLib.debug">
+				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" description="" id="com.qnx.qcc.configuration.staticLib.debug.1661205482" name="Device-Debug" parent="com.qnx.qcc.configuration.staticLib.debug">
 					<folderInfo id="com.qnx.qcc.configuration.staticLib.debug.1661205482." name="/" resourcePath="">
 						<toolChain id="com.qnx.qcc.toolChain.staticLib.debug.1907065498" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
 							<option id="com.qnx.qcc.option.cpu.423234975" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1671248015" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
-							<builder buildPath="${workspace_loc:/moaiext-untz/Device-Debug}" id="com.qnx.nto.1116773730" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<builder buildPath="${workspace_loc:/moaiext-untz/Device-Debug}" id="com.qnx.nto.1116773730" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Coverage"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Coverage"/>
+								</outputEntries>
+							</builder>
 							<tool id="com.qnx.qcc.tool.compiler.1300214394" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.327746919" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.1072491856" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1077751450" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/lua-5.1.3/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../src/&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../src/config-default&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/chipmunk-5.3.4/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/jpeg-8c&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/tinyxml&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/box2d-2.2.1&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/jansson-2.1/src&quot;"/>
+									<listOptionValue builtIn="false" value="../moaiext-untz/public"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/lua-5.1.3/src"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/src/"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/src/config-default"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/chipmunk-5.3.4/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/jpeg-8c"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/tinyxml"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/box2d-2.2.1"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/jansson-2.1/src"/>
 									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.307644267" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1387390763" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
+								<option id="com.qnx.qcc.option.compiler.shared.240931319" name="Shared (-shared)" superClass="com.qnx.qcc.option.compiler.shared" value="true" valueType="boolean"/>
 								<inputType id="com.qnx.qcc.inputType.compiler.451420763" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.125952271" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1771373612" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1695875729" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="../moaiext-untz/public"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/lua-5.1.3/src"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/src/"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/src/config-default"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/chipmunk-5.3.4/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/jpeg-8c"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/tinyxml"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/box2d-2.2.1"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/jansson-2.1/src"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include"/>
+								</option>
+								<option id="com.qnx.qcc.option.assembler.defines.405398659" name="Defines (-D)" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.441113682" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1590364419" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.debug.1426733358" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.207164104" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.495738646" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/Device-Debug}"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.293589541" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.shared.214978403" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.450109987" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="untz"/>
+								</option>
+								<inputType id="com.qnx.qcc.inputType.linker.249893110" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.698493043" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.debug.1298455613" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.release.306203266">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.release.306203266" moduleId="org.eclipse.cdt.core.settings" name="Device-Release">
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Device-Release"/>
 						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -96,6 +131,8 @@
 							<tool id="com.qnx.qcc.tool.compiler.1168706182" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.115762201" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.2" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.31297181" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -121,35 +158,54 @@
 								<inputType id="com.qnx.qcc.inputType.compiler.1708180009" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.839081759" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.includePath.977051478" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1707014901" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1202447581" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.langcpp.782552112" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1236427677" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/Device-Release}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.548994308" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.pie.1593941315" name="Position Independent Executable (-pie)" superClass="com.qnx.qcc.option.linker.pie" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.163255308" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="untz"/>
+								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.384027592" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.release.982996234" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.profile.2133987860">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.profile.2133987860" moduleId="org.eclipse.cdt.core.settings" name="Device-Profile">
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Device-Profile"/>
 						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -169,6 +225,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.873941649" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.profile2.609503511" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.175861000" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -191,6 +249,10 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1772948435" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1194973278" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.873639850" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.2030668915" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1190277505" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -198,29 +260,44 @@
 								<option id="com.qnx.qcc.option.linker.profile2.1918429608" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.1844090307" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.861239829" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/Device-Profile}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.500657266" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1529889068" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="untz"/>
+								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.863773285" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.profile.625572241" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.coverage.1451907098">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.coverage.1451907098" moduleId="org.eclipse.cdt.core.settings" name="Device-Coverage">
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Device-Coverage"/>
 						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -240,6 +317,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.953834627" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.coverage.1774498525" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1923577390" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -262,6 +341,10 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.48658959" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1716783993" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1765657522" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1498951012" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.634804250" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -269,29 +352,44 @@
 								<option id="com.qnx.qcc.option.linker.coverage.1660462543" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.1293892069" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1207356393" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/Device-Coverage}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.816645439" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.670774335" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="untz"/>
+								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.1737267744" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.coverage.1869309400" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.debug.556672092">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.debug.556672092" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Debug">
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Simulator-Debug"/>
 						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -309,6 +407,8 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.1617211632" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.47607146" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1935438690" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -331,35 +431,54 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.728595461" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.386312546" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.698721979" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1978949562" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1576318667" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.debug.2055585011" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.812266795" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1098664571" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/Simulator-Debug}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.411773532" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1263722988" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="untz"/>
+								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.534616902" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.debug.855111544" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.profile.1919038460">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.profile.1919038460" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Profile">
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Simulator-Profile"/>
 						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -378,6 +497,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.239293494" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.profile2.1491502363" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.406901535" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -400,6 +521,10 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.214434397" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.673935546" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1018526034" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.131254836" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1015272791" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -407,29 +532,44 @@
 								<option id="com.qnx.qcc.option.linker.profile2.763071073" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.362112911" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.799563232" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/Simulator-Profile}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1182551239" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1060788896" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="untz"/>
+								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.981335817" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.profile.1635025593" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
 		</cconfiguration>
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.coverage.521676272">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.coverage.521676272" moduleId="org.eclipse.cdt.core.settings" name="Simulator-Coverage">
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Simulator-Coverage"/>
 						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -448,6 +588,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.73549310" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.coverage.734281503" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1486024933" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
@@ -470,6 +612,10 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.355558399" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1637590041" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1471529989" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.817394058" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.66684853" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -477,21 +623,34 @@
 								<option id="com.qnx.qcc.option.linker.coverage.1238805014" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.2058934773" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.954514432" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/Simulator-Coverage}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1639818704" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraries.1633400916" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="untz"/>
+								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.353484852" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.coverage.483235407" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+			</storageModule>
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">

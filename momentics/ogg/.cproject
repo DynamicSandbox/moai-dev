@@ -5,58 +5,75 @@
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.debug.773694563">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.debug.773694563" moduleId="org.eclipse.cdt.core.settings" name="Device-Debug">
-				<externalSettings>
-					<externalSetting>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg/public"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ogg/Device-Debug"/>
-						<entry flags="" kind="libraryFile" name="ogg"/>
-					</externalSetting>
-				</externalSettings>
+				<externalSettings/>
 				<extensions>
 					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" description="" id="com.qnx.qcc.configuration.staticLib.debug.773694563" name="Device-Debug" parent="com.qnx.qcc.configuration.staticLib.debug">
+				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" description="" id="com.qnx.qcc.configuration.staticLib.debug.773694563" name="Device-Debug" parent="com.qnx.qcc.configuration.staticLib.debug">
 					<folderInfo id="com.qnx.qcc.configuration.staticLib.debug.773694563." name="/" resourcePath="">
 						<toolChain id="com.qnx.qcc.toolChain.staticLib.debug.1676516392" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
 							<option id="com.qnx.qcc.option.cpu.15054316" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1035661537" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
-							<builder buildPath="${workspace_loc:/ogg/Device-Debug}" id="com.qnx.nto.485589188" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+							<builder buildPath="${workspace_loc:/ogg/Device-Debug}" id="com.qnx.nto.485589188" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="com.qnx.nto">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Release"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Device-Coverage"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Profile"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Simulator-Coverage"/>
+								</outputEntries>
+							</builder>
 							<tool id="com.qnx.qcc.tool.compiler.1802427020" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.1502083474" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.676215975" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.949216688" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/public}"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="&quot;${WorkspaceDirPath}/../3rdparty/libogg-1.2.2/include&quot;"/>
+									<listOptionValue builtIn="false" value="../ogg/public"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/libogg-1.2.2/include"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1332509289" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1010394296" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
+								<option id="com.qnx.qcc.option.compiler.shared.1978409076" name="Shared (-shared)" superClass="com.qnx.qcc.option.compiler.shared" value="true" valueType="boolean"/>
 								<inputType id="com.qnx.qcc.inputType.compiler.1940894655" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.998783723" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.964413710" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1667833856" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="../ogg/public"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/libogg-1.2.2/include"/>
+								</option>
+								<option id="com.qnx.qcc.option.assembler.defines.1900350628" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.532726703" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.843747412" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.debug.1303611825" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
-								<option id="com.qnx.qcc.option.linker.libraryPaths.798475072" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
-								</option>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.798475072" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths"/>
 								<option id="com.qnx.qcc.option.linker.security.1767297974" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.shared.148145479" name="Shared (-shared)" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
+								<inputType id="com.qnx.qcc.inputType.linker.1178564537" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.1751883797" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -67,8 +84,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ogg/Device-Release"/>
 						<entry flags="" kind="libraryFile" name="ogg"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ogg"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -117,7 +136,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -128,8 +146,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ogg/Device-Profile"/>
 						<entry flags="" kind="libraryFile" name="ogg"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ogg"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -178,7 +198,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -189,8 +208,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ogg/Device-Coverage"/>
 						<entry flags="" kind="libraryFile" name="ogg"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ogg"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -239,7 +260,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -250,8 +270,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ogg/Simulator-Debug"/>
 						<entry flags="" kind="libraryFile" name="ogg"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ogg"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -297,7 +319,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -308,8 +329,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ogg/Simulator-Profile"/>
 						<entry flags="" kind="libraryFile" name="ogg"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ogg"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -357,7 +380,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -368,8 +390,10 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ogg"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ogg/Simulator-Coverage"/>
 						<entry flags="" kind="libraryFile" name="ogg"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ogg"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -417,7 +441,6 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="public"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

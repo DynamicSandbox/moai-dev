@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="269" key="DIALOG_WIDTH"/>
 		<item value="130" key="DIALOG_Y_ORIGIN"/>
-		<item value="586" key="DIALOG_X_ORIGIN"/>
 		<item value="397" key="DIALOG_HEIGHT"/>
+		<item value="586" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Lucida Grande|13.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="true" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
 		<item value="" key="selection"/>
 		<list key="findhistory">
+			<item value="book"/>
+			<item value="main"/>
+			<item value="jpeg_std_error"/>
+			<item value="error"/>
 			<item value="touch"/>
 			<item value="AKUPause"/>
 			<item value="AKU"/>
 			<item value="pause"/>
-			<item value="int_buffer"/>
-			<item value="SDLSystemDate"/>
-			<item value="ALSystemData"/>
-			<item value="__OPENAL__"/>
 		</list>
 		<list key="replacehistory">
 			<item value="intBuffer"/>

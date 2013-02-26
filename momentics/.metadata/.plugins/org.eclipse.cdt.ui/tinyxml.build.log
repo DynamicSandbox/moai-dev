@@ -1,13 +1,5 @@
 
-**** Rebuild of configuration Device-Debug for project tinyxml ****
+**** Build of configuration Device-Debug for project tinyxml ****
 
 **** Internal Builder is used for build               ****
-qcc -o src/tinystr.o ../../../3rdparty/tinyxml/tinystr.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I../tinyxml/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -o src/tinyxmlparser.o ../../../3rdparty/tinyxml/tinyxmlparser.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I../tinyxml/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -o src/tinyxml.o ../../../3rdparty/tinyxml/tinyxml.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I../tinyxml/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -o src/xmltest.o ../../../3rdparty/tinyxml/xmltest.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I../tinyxml/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -o src/tinyxmlerror.o ../../../3rdparty/tinyxml/tinyxmlerror.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I../tinyxml/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/target-override/usr/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -A libtinyxml.a src/xmltest.o src/tinyxmlparser.o src/tinyxmlerror.o src/tinyxml.o src/tinystr.o -V4.6.3,gcc_ntoarmv7le_cpp -w1
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libtinyxml.a
-Build complete for project tinyxml
-Time consumed: 1793  ms.  
+Nothing to build for tinyxml

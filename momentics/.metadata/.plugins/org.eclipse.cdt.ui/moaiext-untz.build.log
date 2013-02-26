@@ -1,32 +1,5 @@
 
-**** Rebuild of configuration Device-Debug for project moaiext-untz ****
+**** Build of configuration Device-Debug for project moaiext-untz ****
 
 **** Internal Builder is used for build               ****
-qcc -o src/MOAIUntzSound.o ../../../src/moaiext-untz/MOAIUntzSound.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moaiext-untz/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/lua-5.1.3/src -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/ -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/config-default -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/chipmunk-5.3.4/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/jpeg-8c -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/ -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/tinyxml -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/box2d-2.2.1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/jansson-2.1/src -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-../../../src/moaiext-untz/MOAIUntzSound.cpp: In constructor 'MOAIUntzSound::MOAIUntzSound()':
-../../../src/moaiext-untz/MOAIUntzSound.cpp:395:20: warning: passing NULL to non-pointer argument 1 of 'STLString::STLString(int, int)' [-Wconversion-null]
-In file included from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/uslscore.h:14:0,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaicore/pch.h:1,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaicore/moaicore.h:7,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaiext-untz/MOAIUntzSound.h:7,
-                 from ../../../src/moaiext-untz/MOAIUntzSound.cpp:4:
-/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/STLString.h: At global scope:
-/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/STLString.h:46:8: note: the mangling of 'va_list' has changed in GCC 4.4
-qcc -o src/MOAIUntzSystem.o ../../../src/moaiext-untz/MOAIUntzSystem.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moaiext-untz/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/lua-5.1.3/src -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/ -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/config-default -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/chipmunk-5.3.4/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/jpeg-8c -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/ -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/tinyxml -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/box2d-2.2.1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/jansson-2.1/src -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-In file included from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/uslscore.h:14:0,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaicore/pch.h:1,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaicore/moaicore.h:7,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaiext-untz/MOAIUntzSystem.h:7,
-                 from ../../../src/moaiext-untz/MOAIUntzSystem.cpp:4:
-/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/STLString.h:46:8: note: the mangling of 'va_list' has changed in GCC 4.4
-qcc -o src/MOAIUntzSampleBuffer.o ../../../src/moaiext-untz/MOAIUntzSampleBuffer.cpp -V4.6.3,gcc_ntoarmv7le_cpp -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/moaiext-untz/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/lua-5.1.3/src -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/ -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/config-default -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/chipmunk-5.3.4/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/jpeg-8c -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/ -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/tinyxml -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/box2d-2.2.1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/jansson-2.1/src -I/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-In file included from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/uslscore.h:14:0,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaicore/pch.h:1,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaicore/moaicore.h:7,
-                 from /Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/moaiext-untz/MOAIUntzSampleBuffer.h:7,
-                 from ../../../src/moaiext-untz/MOAIUntzSampleBuffer.cpp:4:
-/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../src/uslscore/STLString.h:46:8: note: the mangling of 'va_list' has changed in GCC 4.4
-qcc -A libmoaiext-untz.a src/MOAIUntzSystem.o src/MOAIUntzSound.o src/MOAIUntzSampleBuffer.o -V4.6.3,gcc_ntoarmv7le_cpp -w1
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libmoaiext-untz.a
-Build complete for project moaiext-untz
-Time consumed: 6629  ms.  
+Nothing to build for moaiext-untz

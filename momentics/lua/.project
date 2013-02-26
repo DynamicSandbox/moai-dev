@@ -214,11 +214,6 @@
 			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/lua-5.1.3/src/lua.c</locationURI>
 		</link>
 		<link>
-			<name>src/luac.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/lua-5.1.3/src/luac.c</locationURI>
-		</link>
-		<link>
 			<name>src/lundump.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/lua-5.1.3/src/lundump.c</locationURI>

@@ -2,9 +2,4 @@
 **** Build of configuration Device-Debug for project ogg ****
 
 **** Internal Builder is used for build               ****
-qcc -o src/framing.o ../../../3rdparty/libogg-1.2.2/src/framing.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/ogg/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/libogg-1.2.2/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -o src/bitwise.o ../../../3rdparty/libogg-1.2.2/src/bitwise.c -V4.6.3,gcc_ntoarmv7le -w1 -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/ogg/public -I/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2 -I/Applications/bbndk/target_10_0_9_1673/qnx6/../target-override/usr/include -I/Users/nictuku/Documents/development/zipline/moai-dev/momentics/../3rdparty/libogg-1.2.2/include -D_FORTIFY_SOURCE=2 -c -O0 -g -fstack-protector-strong
-qcc -A libogg.a src/framing.o src/bitwise.o -V4.6.3,gcc_ntoarmv7le -w1
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libogg.a
-Build complete for project ogg
-Time consumed: 608  ms.  
+Nothing to build for ogg

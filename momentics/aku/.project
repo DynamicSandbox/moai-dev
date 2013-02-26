@@ -80,6 +80,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>src/AKU-luaext.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/aku/AKU-luaext.cpp</locationURI>
+		</link>
+		<link>
 			<name>src/AKU-untz.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/src/aku/AKU-untz.cpp</locationURI>

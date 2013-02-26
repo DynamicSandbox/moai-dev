@@ -5,14 +5,22 @@
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="com.qnx.qcc.configuration.staticLib.debug.718040050">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.staticLib.debug.718040050" moduleId="org.eclipse.cdt.core.settings" name="Device-Debug">
-				<externalSettings/>
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/box2d"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/box2d/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="box2d"/>
+					</externalSetting>
+				</externalSettings>
 				<extensions>
 					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" description="" id="com.qnx.qcc.configuration.staticLib.debug.718040050" name="Device-Debug" parent="com.qnx.qcc.configuration.staticLib.debug">
+				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" description="" id="com.qnx.qcc.configuration.staticLib.debug.718040050" name="Device-Debug" parent="com.qnx.qcc.configuration.staticLib.debug">
 					<folderInfo id="com.qnx.qcc.configuration.staticLib.debug.718040050." name="/" resourcePath="">
 						<toolChain id="com.qnx.qcc.toolChain.staticLib.debug.2015026571" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
 							<option id="com.qnx.qcc.option.cpu.1468188986" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
@@ -41,17 +49,18 @@
 								<option id="com.qnx.qcc.option.compiler.defines.243376232" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
+								<option id="com.qnx.qcc.option.compiler.shared.531533316" superClass="com.qnx.qcc.option.compiler.shared" value="true" valueType="boolean"/>
 								<inputType id="com.qnx.qcc.inputType.compiler.850247672" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.739585454" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.855492739" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
-								<option id="com.qnx.qcc.option.assembler.includePath.436847871" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+								<option id="com.qnx.qcc.option.assembler.includePath.436847871" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="../box2d/public"/>
 									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/qnx6/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="/Applications/bbndk/target_10_0_9_1673/target-override/usr/include"/>
 									<listOptionValue builtIn="false" value="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/box2d-2.2.1"/>
 								</option>
-								<option id="com.qnx.qcc.option.assembler.defines.836052673" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
+								<option id="com.qnx.qcc.option.assembler.defines.836052673" name="Defines (-D)" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.937755601" superClass="com.qnx.qcc.inputType.assembler"/>
@@ -64,6 +73,11 @@
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.384592212" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.shared.1463558254" superClass="com.qnx.qcc.option.linker.shared" value="true" valueType="boolean"/>
+								<inputType id="com.qnx.qcc.inputType.linker.653990599" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.66712619" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>

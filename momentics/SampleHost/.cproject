@@ -24,9 +24,16 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.359739064" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.721564311" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.488559127" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/public}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/inc}"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -42,37 +49,61 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.680624061" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1268949674" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
-								<option id="com.qnx.qcc.option.assembler.includePath.1074560115" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1074560115" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1221585446" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1295896492" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.debug.1783686628" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.381419061" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.442241743" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Device-Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaiext-untz/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/Device-Debug}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Device-Debug}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1114114459" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1838802842" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/zlcore/Device-Debug/libzlcore.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/Device-Debug/libexpat.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tinyxml/Device-Debug/libtinyxml.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/luaext/Device-Debug/libluaext.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/lua/Device-Debug/liblua.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/chipmunk/Device-Debug/libchipmunk.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jpeg/Device-Debug/libjpeg.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/contrib/Device-Debug/libcontrib.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Device-Debug/libtlsf.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/box2d/Device-Debug/libbox2d.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Debug/libmoaiext-untz.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Device-Debug/libjansson.a}&quot;"/>
+									<listOptionValue builtIn="false" value="tlsf"/>
+									<listOptionValue builtIn="false" value="expat"/>
+									<listOptionValue builtIn="false" value="jansson"/>
+									<listOptionValue builtIn="false" value="aku"/>
+									<listOptionValue builtIn="false" value="uslscore"/>
+									<listOptionValue builtIn="false" value="moaicore"/>
+									<listOptionValue builtIn="false" value="zlcore"/>
+									<listOptionValue builtIn="false" value="tinyxml"/>
+									<listOptionValue builtIn="false" value="luaext"/>
+									<listOptionValue builtIn="false" value="lua"/>
+									<listOptionValue builtIn="false" value="chipmunk"/>
+									<listOptionValue builtIn="false" value="jpeg"/>
+									<listOptionValue builtIn="false" value="contrib"/>
+									<listOptionValue builtIn="false" value="box2d"/>
+									<listOptionValue builtIn="false" value="moaiext-untz"/>
 									<listOptionValue builtIn="false" value="png"/>
 									<listOptionValue builtIn="false" value="m"/>
 									<listOptionValue builtIn="false" value="z"/>
@@ -86,13 +117,14 @@
 									<listOptionValue builtIn="false" value="bps"/>
 									<listOptionValue builtIn="false" value="GLESv1_CM"/>
 									<listOptionValue builtIn="false" value="GLESv2"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Debug/libuntz.a}&quot;"/>
 									<listOptionValue builtIn="false" value="alut"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Debug/libvorbis.a}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ogg/Device-Debug/libogg.a}&quot;"/>
+									<listOptionValue builtIn="false" value="vorbis"/>
+									<listOptionValue builtIn="false" value="ogg"/>
 									<listOptionValue builtIn="false" value="OpenAL"/>
 									<listOptionValue builtIn="false" value="SDL"/>
 									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="sqlite3"/>
+									<listOptionValue builtIn="false" value="untz"/>
 									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.565975543" superClass="com.qnx.qcc.inputType.linker">
@@ -112,11 +144,46 @@
 				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.2076896560" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/TouchControlOverlay"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Device-Debug"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/TouchControlOverlay/Device-Debug"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="TouchControlOverlay"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="uslscore;com.qnx.qcc.configuration.staticLib.debug.550728556" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/uslscore/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="uslscore"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="aku;com.qnx.qcc.configuration.staticLib.debug.201535336" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/aku/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="aku"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="jansson;com.qnx.qcc.configuration.staticLib.debug.253067387" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="moaiext-untz;com.qnx.qcc.configuration.staticLib.debug.1661205482" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="vorbis;com.qnx.qcc.configuration.staticLib.debug.2001269028" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="expat;com.qnx.qcc.configuration.staticLib.debug.1037852079" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/expat/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="expat"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.debug.1298455613" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+				<externalSettings containerId="tlsf;com.qnx.qcc.configuration.staticLib.debug.1081096877" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tlsf/Device-Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tlsf"/>
 					</externalSetting>
 				</externalSettings>
 				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.debug.1551432411" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
@@ -142,8 +209,45 @@
 							<tool id="com.qnx.qcc.tool.compiler.1726578108" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.1028250169" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.2" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.907016047" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/public}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/inc}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jansson/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/aku/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaiext-untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/expat/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tlsf/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/uslscore/src}"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -162,6 +266,22 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1562805673" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.includePath.865836901" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1995580596" superClass="com.qnx.qcc.inputType.assembler"/>
@@ -169,8 +289,26 @@
 							<tool id="com.qnx.qcc.tool.linker.1437386172" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.langcpp.2120886699" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1147210072" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Release}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Release}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Device-Release}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/Device-Release}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/Device-Release}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Device-Release}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
@@ -178,6 +316,14 @@
 								<option id="com.qnx.qcc.option.linker.pie.2116637114" name="Position Independent Executable (-pie)" superClass="com.qnx.qcc.option.linker.pie" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.security.29421227" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1407407705" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="tlsf"/>
+									<listOptionValue builtIn="false" value="untz"/>
+									<listOptionValue builtIn="false" value="expat"/>
+									<listOptionValue builtIn="false" value="vorbis"/>
+									<listOptionValue builtIn="false" value="moaiext-untz"/>
+									<listOptionValue builtIn="false" value="jansson"/>
+									<listOptionValue builtIn="false" value="aku"/>
+									<listOptionValue builtIn="false" value="uslscore"/>
 									<listOptionValue builtIn="false" value="emulate"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
@@ -212,6 +358,17 @@
 									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
 									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="tinyxml"/>
+									<listOptionValue builtIn="false" value="moaicore"/>
+									<listOptionValue builtIn="false" value="box2d"/>
+									<listOptionValue builtIn="false" value="luaext"/>
+									<listOptionValue builtIn="false" value="contrib"/>
+									<listOptionValue builtIn="false" value="zlcore"/>
+									<listOptionValue builtIn="false" value="lua"/>
+									<listOptionValue builtIn="false" value="chipmunk"/>
+									<listOptionValue builtIn="false" value="ogg"/>
+									<listOptionValue builtIn="false" value="jpeg"/>
+									<listOptionValue builtIn="false" value="sqlite3"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.712235440" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -232,6 +389,78 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Device-Release"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="uslscore;com.qnx.qcc.configuration.staticLib.release.401047703" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/uslscore/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="uslscore"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="uslscore"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="aku;com.qnx.qcc.configuration.staticLib.release.1138038512" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/aku/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="aku"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="aku"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="jansson;com.qnx.qcc.configuration.staticLib.release.1501119288" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="moaiext-untz;com.qnx.qcc.configuration.staticLib.release.306203266" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="vorbis;com.qnx.qcc.configuration.staticLib.release.578053596" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/vorbis/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="vorbis"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="vorbis"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="expat;com.qnx.qcc.configuration.staticLib.release.1582818581" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/expat/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="expat"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="expat"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.release.982996234" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="tlsf;com.qnx.qcc.configuration.staticLib.release.1873487166" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tlsf/Device-Release"/>
+						<entry flags="" kind="libraryFile" name="tlsf"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tlsf"/>
 					</externalSetting>
 				</externalSettings>
 				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.release.1970482052" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
@@ -259,9 +488,45 @@
 								<option id="com.qnx.qcc.option.compile.debug.1111583363" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.profile2.161407371" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.89586542" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/public}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/inc}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jansson/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/aku/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaiext-untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/expat/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tlsf/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/uslscore/src}"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -277,8 +542,23 @@
 							<tool id="com.qnx.qcc.tool.assembler.1048335747" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1746903183" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.assembler.includePath.1062410065" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.276302026" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
@@ -287,17 +567,41 @@
 								<option id="com.qnx.qcc.option.linker.profile2.975717774" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.924205837" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.339536427" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Profile}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Device-Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/Device-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/Device-Profile}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Device-Profile}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1936073571" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.281284873" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="tlsf"/>
+									<listOptionValue builtIn="false" value="untz"/>
+									<listOptionValue builtIn="false" value="expat"/>
+									<listOptionValue builtIn="false" value="vorbis"/>
+									<listOptionValue builtIn="false" value="moaiext-untz"/>
+									<listOptionValue builtIn="false" value="jansson"/>
+									<listOptionValue builtIn="false" value="aku"/>
+									<listOptionValue builtIn="false" value="uslscore"/>
 									<listOptionValue builtIn="false" value="emulate"/>
-									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
@@ -330,6 +634,18 @@
 									<listOptionValue builtIn="false" value="SDL"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
 									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="tinyxml"/>
+									<listOptionValue builtIn="false" value="moaicore"/>
+									<listOptionValue builtIn="false" value="box2d"/>
+									<listOptionValue builtIn="false" value="luaext"/>
+									<listOptionValue builtIn="false" value="contrib"/>
+									<listOptionValue builtIn="false" value="zlcore"/>
+									<listOptionValue builtIn="false" value="lua"/>
+									<listOptionValue builtIn="false" value="chipmunk"/>
+									<listOptionValue builtIn="false" value="ogg"/>
+									<listOptionValue builtIn="false" value="jpeg"/>
+									<listOptionValue builtIn="false" value="sqlite3"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.163415657" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -348,11 +664,80 @@
 				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.2076896560" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/TouchControlOverlay"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Device-Debug"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/TouchControlOverlay/Device-Debug"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="TouchControlOverlay"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="uslscore;com.qnx.qcc.configuration.staticLib.profile.1778409155" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/uslscore/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="uslscore"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="uslscore"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="aku;com.qnx.qcc.configuration.staticLib.profile.158612168" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/aku/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="aku"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="aku"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="jansson;com.qnx.qcc.configuration.staticLib.profile.508952140" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="moaiext-untz;com.qnx.qcc.configuration.staticLib.profile.2133987860" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="vorbis;com.qnx.qcc.configuration.staticLib.profile.1594837973" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/vorbis/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="vorbis"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="vorbis"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="expat;com.qnx.qcc.configuration.staticLib.profile.1856449216" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/expat/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="expat"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="expat"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.profile.625572241" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="tlsf;com.qnx.qcc.configuration.staticLib.profile.2015615985" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tlsf/Device-Profile"/>
+						<entry flags="" kind="libraryFile" name="tlsf"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tlsf"/>
 					</externalSetting>
 				</externalSettings>
 				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.profile.366549893" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
@@ -380,9 +765,45 @@
 								<option id="com.qnx.qcc.option.compile.debug.1178878546" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.coverage.323919107" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1420834846" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/public}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/inc}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jansson/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/aku/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaiext-untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/expat/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tlsf/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/uslscore/src}"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -398,8 +819,23 @@
 							<tool id="com.qnx.qcc.tool.assembler.1868403802" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1931059870" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.assembler.includePath.1459042226" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.760243235" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
@@ -408,17 +844,41 @@
 								<option id="com.qnx.qcc.option.linker.coverage.615101468" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.88722105" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.59744636" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Coverage}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Device-Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Device-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/Device-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/Device-Coverage}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Device-Coverage}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.614294850" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1746336897" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="tlsf"/>
+									<listOptionValue builtIn="false" value="untz"/>
+									<listOptionValue builtIn="false" value="expat"/>
+									<listOptionValue builtIn="false" value="vorbis"/>
+									<listOptionValue builtIn="false" value="moaiext-untz"/>
+									<listOptionValue builtIn="false" value="jansson"/>
+									<listOptionValue builtIn="false" value="aku"/>
+									<listOptionValue builtIn="false" value="uslscore"/>
 									<listOptionValue builtIn="false" value="emulate"/>
-									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Device-Debug/libuslscore.a}&quot;"/>
@@ -451,6 +911,18 @@
 									<listOptionValue builtIn="false" value="SDL"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
 									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="tinyxml"/>
+									<listOptionValue builtIn="false" value="moaicore"/>
+									<listOptionValue builtIn="false" value="box2d"/>
+									<listOptionValue builtIn="false" value="luaext"/>
+									<listOptionValue builtIn="false" value="contrib"/>
+									<listOptionValue builtIn="false" value="zlcore"/>
+									<listOptionValue builtIn="false" value="lua"/>
+									<listOptionValue builtIn="false" value="chipmunk"/>
+									<listOptionValue builtIn="false" value="ogg"/>
+									<listOptionValue builtIn="false" value="jpeg"/>
+									<listOptionValue builtIn="false" value="sqlite3"/>
+									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.814427571" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -469,11 +941,80 @@
 				<externalSettings containerId="TouchControlOverlay;com.qnx.qcc.configuration.sharedLib.debug.2076896560" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/TouchControlOverlay"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Device-Debug"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/TouchControlOverlay/Device-Debug"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="TouchControlOverlay"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="uslscore;com.qnx.qcc.configuration.staticLib.coverage.1575476490" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/uslscore/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="uslscore"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="uslscore"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="aku;com.qnx.qcc.configuration.staticLib.coverage.1870609557" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/aku/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="aku"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="aku"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="jansson;com.qnx.qcc.configuration.staticLib.coverage.1330011607" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="moaiext-untz;com.qnx.qcc.configuration.staticLib.coverage.1451907098" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="vorbis;com.qnx.qcc.configuration.staticLib.coverage.2036465182" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/vorbis/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="vorbis"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="vorbis"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="expat;com.qnx.qcc.configuration.staticLib.coverage.372853798" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/expat/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="expat"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="expat"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.coverage.1869309400" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="tlsf;com.qnx.qcc.configuration.staticLib.coverage.1251486838" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tlsf/Device-Coverage"/>
+						<entry flags="" kind="libraryFile" name="tlsf"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tlsf"/>
 					</externalSetting>
 				</externalSettings>
 				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.coverage.327278952" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
@@ -499,8 +1040,45 @@
 								<option id="com.qnx.qcc.option.compiler.optlevel.534353531" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compile.debug.150259335" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1764412489" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/public}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/inc}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jansson/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/aku/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaiext-untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/expat/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tlsf/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/uslscore/src}"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -516,6 +1094,22 @@
 							<tool id="com.qnx.qcc.tool.assembler.12569451" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1901878535" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.assembler.includePath.1603501178" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.2141530057" superClass="com.qnx.qcc.inputType.assembler"/>
@@ -524,14 +1118,40 @@
 								<option id="com.qnx.qcc.option.linker.debug.1740740049" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.1263258466" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.470702158" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Simulator-Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Simulator-Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/Simulator-Debug}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/Simulator-Debug}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Simulator-Debug}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1174304488" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1700230151" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="tlsf"/>
+									<listOptionValue builtIn="false" value="untz"/>
+									<listOptionValue builtIn="false" value="expat"/>
+									<listOptionValue builtIn="false" value="vorbis"/>
+									<listOptionValue builtIn="false" value="moaiext-untz"/>
+									<listOptionValue builtIn="false" value="jansson"/>
+									<listOptionValue builtIn="false" value="aku"/>
+									<listOptionValue builtIn="false" value="uslscore"/>
 									<listOptionValue builtIn="false" value="emulate"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
@@ -566,6 +1186,17 @@
 									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
 									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="tinyxml"/>
+									<listOptionValue builtIn="false" value="moaicore"/>
+									<listOptionValue builtIn="false" value="box2d"/>
+									<listOptionValue builtIn="false" value="luaext"/>
+									<listOptionValue builtIn="false" value="contrib"/>
+									<listOptionValue builtIn="false" value="zlcore"/>
+									<listOptionValue builtIn="false" value="lua"/>
+									<listOptionValue builtIn="false" value="chipmunk"/>
+									<listOptionValue builtIn="false" value="ogg"/>
+									<listOptionValue builtIn="false" value="jpeg"/>
+									<listOptionValue builtIn="false" value="sqlite3"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.2061817206" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -586,6 +1217,78 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Simulator"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="uslscore;com.qnx.qcc.configuration.staticLib.debug.663830467" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/uslscore/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="uslscore"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="uslscore"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="aku;com.qnx.qcc.configuration.staticLib.debug.117697930" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/aku/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="aku"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="aku"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="jansson;com.qnx.qcc.configuration.staticLib.debug.2050688501" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="moaiext-untz;com.qnx.qcc.configuration.staticLib.debug.556672092" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="vorbis;com.qnx.qcc.configuration.staticLib.debug.1940203631" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/vorbis/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="vorbis"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="vorbis"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="expat;com.qnx.qcc.configuration.staticLib.debug.1252643801" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/expat/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="expat"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="expat"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.debug.855111544" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="tlsf;com.qnx.qcc.configuration.staticLib.debug.2043532604" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tlsf/Simulator-Debug"/>
+						<entry flags="" kind="libraryFile" name="tlsf"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tlsf"/>
 					</externalSetting>
 				</externalSettings>
 				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.debug.389344599" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
@@ -612,8 +1315,45 @@
 								<option id="com.qnx.qcc.option.compile.debug.2023127734" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.profile2.1969735530" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1407634283" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/public}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/inc}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jansson/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/aku/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaiext-untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/expat/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tlsf/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/uslscore/src}"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -629,6 +1369,22 @@
 							<tool id="com.qnx.qcc.tool.assembler.1171345702" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1141109995" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.assembler.includePath.54469893" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.954923682" superClass="com.qnx.qcc.inputType.assembler"/>
@@ -638,14 +1394,40 @@
 								<option id="com.qnx.qcc.option.linker.profile2.57582323" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.963616128" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.286804748" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Simulator-Profile}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Simulator-Profile}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/Simulator-Profile}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/Simulator-Profile}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Simulator-Profile}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.2054975363" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1740978761" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="tlsf"/>
+									<listOptionValue builtIn="false" value="untz"/>
+									<listOptionValue builtIn="false" value="expat"/>
+									<listOptionValue builtIn="false" value="vorbis"/>
+									<listOptionValue builtIn="false" value="moaiext-untz"/>
+									<listOptionValue builtIn="false" value="jansson"/>
+									<listOptionValue builtIn="false" value="aku"/>
+									<listOptionValue builtIn="false" value="uslscore"/>
 									<listOptionValue builtIn="false" value="emulate"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
@@ -680,6 +1462,17 @@
 									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
 									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="tinyxml"/>
+									<listOptionValue builtIn="false" value="moaicore"/>
+									<listOptionValue builtIn="false" value="box2d"/>
+									<listOptionValue builtIn="false" value="luaext"/>
+									<listOptionValue builtIn="false" value="contrib"/>
+									<listOptionValue builtIn="false" value="zlcore"/>
+									<listOptionValue builtIn="false" value="lua"/>
+									<listOptionValue builtIn="false" value="chipmunk"/>
+									<listOptionValue builtIn="false" value="ogg"/>
+									<listOptionValue builtIn="false" value="jpeg"/>
+									<listOptionValue builtIn="false" value="sqlite3"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.1165548631" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -700,6 +1493,78 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Simulator"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="uslscore;com.qnx.qcc.configuration.staticLib.profile.502786671" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/uslscore/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="uslscore"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="uslscore"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="aku;com.qnx.qcc.configuration.staticLib.profile.2140176041" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/aku/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="aku"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="aku"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="jansson;com.qnx.qcc.configuration.staticLib.profile.1528112250" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="moaiext-untz;com.qnx.qcc.configuration.staticLib.profile.1919038460" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="vorbis;com.qnx.qcc.configuration.staticLib.profile.1416597958" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/vorbis/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="vorbis"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="vorbis"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="expat;com.qnx.qcc.configuration.staticLib.profile.1714155152" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/expat/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="expat"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="expat"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.profile.1635025593" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="tlsf;com.qnx.qcc.configuration.staticLib.profile.1984320271" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tlsf/Simulator-Profile"/>
+						<entry flags="" kind="libraryFile" name="tlsf"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tlsf"/>
 					</externalSetting>
 				</externalSettings>
 				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.profile.1424221911" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
@@ -726,8 +1591,45 @@
 								<option id="com.qnx.qcc.option.compile.debug.1854254233" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.coverage.939248679" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1745592114" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/public}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/inc}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jansson/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/aku/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaiext-untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/vorbis/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/expat/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/untz/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tlsf/src}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/uslscore/src}"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/libxml"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/AL"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/openssl"/>
@@ -743,6 +1645,22 @@
 							<tool id="com.qnx.qcc.tool.assembler.684415970" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1174129874" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.assembler.includePath.1306237617" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/public}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate}&quot;"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.823014193" superClass="com.qnx.qcc.inputType.assembler"/>
@@ -752,14 +1670,40 @@
 								<option id="com.qnx.qcc.option.linker.coverage.198125728" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.langcpp.1211648983" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraryPaths.1405569748" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tlsf/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/untz/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/expat/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/vorbis/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaiext-untz/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/jansson/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Simulator-Coverage}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/uslscore/Simulator-Coverage}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/emulate/Simulator}&quot;"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/TouchControlOverlay/Simulator}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/jpeg/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/ogg/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/chipmunk/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/lua/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/zlcore/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/contrib/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/luaext/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/box2d/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/moaicore/Simulator-Coverage}"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/tinyxml/Simulator-Coverage}"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:/SDL/Simulator-Coverage}"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
 								</option>
 								<option id="com.qnx.qcc.option.linker.security.1240701145" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.linker.libraries.1035639642" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
+									<listOptionValue builtIn="false" value="tlsf"/>
+									<listOptionValue builtIn="false" value="untz"/>
+									<listOptionValue builtIn="false" value="expat"/>
+									<listOptionValue builtIn="false" value="vorbis"/>
+									<listOptionValue builtIn="false" value="moaiext-untz"/>
+									<listOptionValue builtIn="false" value="jansson"/>
+									<listOptionValue builtIn="false" value="aku"/>
+									<listOptionValue builtIn="false" value="uslscore"/>
 									<listOptionValue builtIn="false" value="emulate"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/aku/Device-Debug/libaku.a}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/moaicore/Device-Debug/libmoaicore.a}&quot;"/>
@@ -794,6 +1738,17 @@
 									<listOptionValue builtIn="false" value="TouchControlOverlay"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.a}&quot;"/>
 									<listOptionValue builtIn="false" value="xml2"/>
+									<listOptionValue builtIn="false" value="tinyxml"/>
+									<listOptionValue builtIn="false" value="moaicore"/>
+									<listOptionValue builtIn="false" value="box2d"/>
+									<listOptionValue builtIn="false" value="luaext"/>
+									<listOptionValue builtIn="false" value="contrib"/>
+									<listOptionValue builtIn="false" value="zlcore"/>
+									<listOptionValue builtIn="false" value="lua"/>
+									<listOptionValue builtIn="false" value="chipmunk"/>
+									<listOptionValue builtIn="false" value="ogg"/>
+									<listOptionValue builtIn="false" value="jpeg"/>
+									<listOptionValue builtIn="false" value="sqlite3"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.linker.210426991" superClass="com.qnx.qcc.inputType.linker">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -814,6 +1769,78 @@
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/emulate"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/emulate/Simulator"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="emulate"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="uslscore;com.qnx.qcc.configuration.staticLib.coverage.2063781263" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/uslscore"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/uslscore/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="uslscore"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="uslscore"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="aku;com.qnx.qcc.configuration.staticLib.coverage.697106185" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/aku"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/aku/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="aku"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="aku"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="jansson;com.qnx.qcc.configuration.staticLib.coverage.817483831" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/jansson"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/jansson/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="jansson"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="jansson"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="moaiext-untz;com.qnx.qcc.configuration.staticLib.coverage.521676272" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/moaiext-untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/moaiext-untz/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="moaiext-untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="moaiext-untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="vorbis;com.qnx.qcc.configuration.staticLib.coverage.708321480" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/vorbis"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/vorbis/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="vorbis"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="vorbis"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="expat;com.qnx.qcc.configuration.staticLib.coverage.1687407871" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/expat"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/expat/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="expat"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="expat"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="untz;com.qnx.qcc.configuration.staticLib.coverage.483235407" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/untz"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/untz/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="untz"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="untz"/>
+					</externalSetting>
+				</externalSettings>
+				<externalSettings containerId="tlsf;com.qnx.qcc.configuration.staticLib.coverage.757064220" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier">
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf/public"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/tlsf"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/tlsf/Simulator-Coverage"/>
+						<entry flags="" kind="libraryFile" name="tlsf"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="tlsf"/>
 					</externalSetting>
 				</externalSettings>
 				<externalSettings containerId="SDL;com.qnx.qcc.configuration.sharedLib.coverage.293903173" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="32" version="2.0">
+<workbench progressCount="34" version="2.0">
 <workbenchAdvisor/>
 <window height="783" maximized="true" width="1316" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -17,12 +17,12 @@
 <coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="69" y="26"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="130" y="26"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="26"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="26"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="76" y="26"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.qnx.tools.bbt.xml.internal.ui.editor.bbtxml.BBTXMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.qnx.tools.bbt.xml.internal.ui.editor.bbtxml.BBTXMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -35,39 +35,23 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="RiffFile.cpp" partName="RiffFile.cpp" path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/src/native/sdl/RiffFile.cpp" title="RiffFile.cpp" tooltip="untz/src/native/sdl/RiffFile.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/untz/src/native/sdl/RiffFile.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3360" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.cpp" partName="UntzSystem.cpp" path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/src/native/sdl/UntzSystem.cpp" title="UntzSystem.cpp" tooltip="untz/src/native/sdl/UntzSystem.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/untz/src/native/sdl/UntzSystem.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1498" selectionTopPixel="976"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.h" partName="UntzSystem.h" title="UntzSystem.h" tooltip="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h" project="untz"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="/Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/src/main.cpp" title="main.cpp" tooltip="SampleHost/src/main.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SampleHost/src/main.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2759" selectionTopPixel="1673"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2192" selectionTopPixel="1390"/>
 </editor>
-<editor id="com.qnx.tools.bbt.xml.internal.ui.editor.bbtxml.BBTXMLEditor" name="bar-descriptor.xml" partName="bar-descriptor.xml" path="/Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/bar-descriptor.xml" title="bar-descriptor.xml" tooltip="SampleHost/bar-descriptor.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SampleHost/bar-descriptor.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="main.lua" partName="main.lua" path="/Users/nictuku/Documents/development/zipline/moai-dev/momentics/SampleHost/assets/main.lua" title="main.lua" tooltip="SampleHost/assets/main.lua" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SampleHost/assets/main.lua"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="811" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="AKU-luaext.cpp" partName="AKU-luaext.cpp" path="/Users/nictuku/Documents/development/zipline/moai-dev/src/aku/AKU-luaext.cpp" title="AKU-luaext.cpp" tooltip="aku/src/AKU-luaext.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/aku/src/AKU-luaext.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
 <view id="com.qnx.tools.ide.sysinfo.internal.ui.mallocview" partName="Malloc Information"/>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
@@ -373,6 +357,7 @@
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="com.qnx.tools.ide.target.internal.ui.targetview"/>
 <view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
 <fastViewBars/>
@@ -397,7 +382,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7546628" ratioLeft="526" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.5193687" ratioLeft="362" ratioRight="335" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -405,6 +390,7 @@
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="com.qnx.tools.ide.target.internal.ui.targetview" label="Target Navigator"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="Disassembly"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -412,6 +398,7 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
@@ -434,115 +421,22 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SampleHost/src/main.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/untz/src/native/sdl/UntzSystem.cpp"/>
-<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h" project="untz"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/untz/src/native/sdl/RiffFile.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/SampleHost/assets/main.lua"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/untz/src/native/sdl/RiffFile.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lua/src/lua.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lua/src/luac.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/jpeg/src/jerror-moai.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/jpeg/src/jerror.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/jpeg/src/jmemansi.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/jpeg/src/jmemname.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/jpeg/src/jmemnobs.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ogg/src/framing.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ogg/src/bitwise.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/untz/src/native/sdl/UntzSystem.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/SampleHost/src/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/aku/src/AKU-luaext.cpp"/>
 </editors>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2763" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2763" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2763" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="UntzSystem.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="2001" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2763" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1861" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2680" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2680" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2763" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1350" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2680" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1563" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2680" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1563" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1565" y="43"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2763" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1565" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1349" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2670" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1349" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position info="not_deleted" x="1565" y="43"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2762" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="2665" y="0"/>
-</item>
-<item historyLabel="UntzSystem.cpp" index="1">
-<position/>
-</item>
 <item historyLabel="main.cpp" index="0">
 <position info="not_deleted" x="2763" y="0"/>
 </item>
@@ -555,7 +449,7 @@
 <item historyLabel="UntzSystem.cpp" index="1">
 <position info="not_deleted" x="1565" y="0"/>
 </item>
-<item historyLabel="RiffFile.cpp" index="3">
+<item historyLabel="RiffFile.cpp" index="2">
 <position info="not_deleted" x="3360" y="0"/>
 </item>
 <item historyLabel="UntzSystem.cpp" index="1">
@@ -585,7 +479,112 @@
 <item historyLabel="main.cpp" index="0">
 <position info="not_deleted" x="2759" y="0"/>
 </item>
-<item active="true" historyLabel="main.lua" index="4">
+<item historyLabel="main.lua" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RiffFile.cpp" index="4">
+<position info="not_deleted" x="3360" y="0"/>
+</item>
+<item historyLabel="lua.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="luac.c" index="6">
+<position info="not_deleted" x="445" y="0"/>
+</item>
+<item historyLabel="lua.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jerror-moai.c" index="7">
+<position info="not_deleted" x="6730" y="0"/>
+</item>
+<item historyLabel="jerror.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jerror-moai.c" index="7">
+<position info="not_deleted" x="6730" y="0"/>
+</item>
+<item historyLabel="jerror.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jerror-moai.c" index="7">
+<position info="not_deleted" x="6730" y="0"/>
+</item>
+<item historyLabel="jerror.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jerror-moai.c" index="7">
+<position info="not_deleted" x="6730" y="0"/>
+</item>
+<item historyLabel="jerror.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jerror-moai.c" index="7">
+<position info="not_deleted" x="6730" y="0"/>
+</item>
+<item historyLabel="jerror.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jerror-moai.c" index="7">
+<position info="not_deleted" x="6730" y="0"/>
+</item>
+<item historyLabel="jmemansi.c" index="9">
+<position info="not_deleted" x="581" y="0"/>
+</item>
+<item historyLabel="jmemname.c" index="10">
+<position info="not_deleted" x="784" y="0"/>
+</item>
+<item historyLabel="jmemnobs.c" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jmemname.c" index="10">
+<position info="not_deleted" x="784" y="0"/>
+</item>
+<item historyLabel="jmemnobs.c" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jmemname.c" index="10">
+<position info="not_deleted" x="0" y="8314"/>
+</item>
+<item historyLabel="jmemansi.c" index="9">
+<position info="not_deleted" x="581" y="0"/>
+</item>
+<item historyLabel="jmemname.c" index="10">
+<position info="not_deleted" x="0" y="8314"/>
+</item>
+<item historyLabel="jmemnobs.c" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jmemansi.c" index="9">
+<position info="not_deleted" x="581" y="0"/>
+</item>
+<item historyLabel="framing.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="bitwise.c" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="framing.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="jmemansi.c" index="9">
+<position info="not_deleted" x="581" y="0"/>
+</item>
+<item historyLabel="jerror-moai.c" index="7">
+<position info="not_deleted" x="6730" y="0"/>
+</item>
+<item historyLabel="lua.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="RiffFile.cpp" index="4">
+<position info="not_deleted" x="3360" y="0"/>
+</item>
+<item historyLabel="UntzSystem.cpp" index="14">
+<position info="not_deleted" x="1498" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="15">
+<position info="not_deleted" x="2759" y="0"/>
+</item>
+<item active="true" historyLabel="AKU-luaext.cpp" index="16">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -605,50 +604,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="AKU-luaext.cpp" tooltip="aku/src/AKU-luaext.cpp">
+<persistable path="/aku/src/AKU-luaext.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="SampleHost/src/main.cpp">
+<persistable path="/SampleHost/src/main.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="bitwise.c" tooltip="ogg/src/bitwise.c">
+<persistable path="/ogg/src/bitwise.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="framing.c" tooltip="ogg/src/framing.c">
+<persistable path="/ogg/src/framing.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="jmemnobs.c" tooltip="jpeg/src/jmemnobs.c">
+<persistable path="/jpeg/src/jmemnobs.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="jmemname.c" tooltip="jpeg/src/jmemname.c">
+<persistable path="/jpeg/src/jmemname.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="jmemansi.c" tooltip="jpeg/src/jmemansi.c">
+<persistable path="/jpeg/src/jmemansi.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="jerror.c" tooltip="jpeg/src/jerror.c">
+<persistable path="/jpeg/src/jerror.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="jerror-moai.c" tooltip="jpeg/src/jerror-moai.c">
+<persistable path="/jpeg/src/jerror-moai.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="luac.c" tooltip="lua/src/luac.c">
+<persistable path="/lua/src/luac.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lua.c" tooltip="lua/src/lua.c">
+<persistable path="/lua/src/lua.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="main.lua" tooltip="SampleHost/assets/main.lua">
 <persistable path="/SampleHost/assets/main.lua"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.qnx.tools.bbt.xml.internal.ui.editor.bbtxml.BBTXMLEditor" name="bar-descriptor.xml" tooltip="SampleHost/bar-descriptor.xml">
 <persistable path="/SampleHost/bar-descriptor.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="SampleHost/src/main.cpp">
-<persistable path="/SampleHost/src/main.cpp"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSound.cpp" tooltip="untz/src/UntzSound.cpp">
 <persistable path="/untz/src/UntzSound.cpp"/>
 </file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.h" tooltip="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h">
 <persistable path="/Users/nictuku/Documents/development/zipline/moai-dev/3rdparty/untz/include/UntzSystem.h" project="untz"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.cpp" tooltip="untz/src/native/sdl/UntzSystem.cpp">
-<persistable path="/untz/src/native/sdl/UntzSystem.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaveFileAudioSource.cpp" tooltip="untz/src/native/sdl/WaveFileAudioSource.cpp">
-<persistable path="/untz/src/native/sdl/WaveFileAudioSource.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaveFile.cpp" tooltip="untz/src/native/sdl/WaveFile.cpp">
-<persistable path="/untz/src/native/sdl/WaveFile.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="RiffFile.cpp" tooltip="untz/src/native/sdl/RiffFile.cpp">
-<persistable path="/untz/src/native/sdl/RiffFile.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaveFileAudioSource.cpp" tooltip="untz/src/native/openal/WaveFileAudioSource.cpp">
-<persistable path="/untz/src/native/openal/WaveFileAudioSource.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WaveFile.cpp" tooltip="untz/src/native/openal/WaveFile.cpp">
-<persistable path="/untz/src/native/openal/WaveFile.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="RiffFile.cpp" tooltip="untz/src/native/openal/RiffFile.cpp">
-<persistable path="/untz/src/native/openal/RiffFile.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SDL_playbookvideo_8bit.c" tooltip="SDL/src/video/playbook/SDL_playbookvideo_8bit.c">
-<persistable path="/SDL/src/video/playbook/SDL_playbookvideo_8bit.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="UntzSystem.cpp" tooltip="untz/src/native/openal/UntzSystem.cpp">
-<persistable path="/untz/src/native/openal/UntzSystem.cpp"/>
-</file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MOAIFmodEx.h" tooltip="/Users/nictuku/Documents/development/zipline/moai-dev/src/moaiext-fmod-ex/MOAIFmodEx.h">
-<persistable path="/Users/nictuku/Documents/development/zipline/moai-dev/src/moaiext-fmod-ex/MOAIFmodEx.h" project="moaiext-fmod-ex"/>
 </file>
 </mruList>
 </workbench>

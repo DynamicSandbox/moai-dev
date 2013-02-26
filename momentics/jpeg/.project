@@ -259,11 +259,6 @@
 			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/jpeg-8c/jerror-moai.c</locationURI>
 		</link>
 		<link>
-			<name>src/jerror.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/jpeg-8c/jerror.c</locationURI>
-		</link>
-		<link>
 			<name>src/jfdctflt.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/jpeg-8c/jfdctflt.c</locationURI>
@@ -302,16 +297,6 @@
 			<name>src/jmemmgr.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/jpeg-8c/jmemmgr.c</locationURI>
-		</link>
-		<link>
-			<name>src/jmemname.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/jpeg-8c/jmemname.c</locationURI>
-		</link>
-		<link>
-			<name>src/jmemnobs.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/3rdparty/jpeg-8c/jmemnobs.c</locationURI>
 		</link>
 		<link>
 			<name>src/jquant1.c</name>

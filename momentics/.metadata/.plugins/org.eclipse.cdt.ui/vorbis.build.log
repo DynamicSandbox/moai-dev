@@ -2,7 +2,4 @@
 **** Build of configuration Device-Debug for project vorbis ****
 
 **** Internal Builder is used for build               ****
-qcc -A libvorbis.a src/window.o src/vorbisfile.o src/vorbisenc.o src/synthesis.o src/smallft.o src/res0.o src/registry.o src/psy.o src/mdct.o src/mapping0.o src/lsp.o src/lpc.o src/lookup.o src/info.o src/floor1.o src/floor0.o src/envelope.o src/codebook.o src/block.o src/bitrate.o src/analysis.o src/barkmel.o src/sharedbook.o src/tone.o -V4.6.3,gcc_ntoarmv7le -w1
-/Applications/bbndk/host_10_0_9_404/darwin/x86/usr/bin/ntoarm-ar: creating libvorbis.a
-Build complete for project vorbis
-Time consumed: 608  ms.  
+Nothing to build for vorbis
