@@ -1,0 +1,8 @@
+# Modules needed for BlackBerry 10
+[submodule "SDL"]
+  path = momentics/SDL
+  url = git://github.com/blackberry/SDL.git
+
+[submodule "TouchControlOverlay"]
+  path = momentics/TouchControlOverlay
+  url = git://github.com/blackberry/TouchControlOverlay.git
